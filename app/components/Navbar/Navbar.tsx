@@ -43,15 +43,15 @@ const Navbar = () => {
                                     className="block h-12 w-40 lg:hidden"
                                     src={'/logo.jpeg'}
                                     alt="logo"
-                                    width={50}
-                                    height={50}
+                                    width={40}
+                                    height={20}
                                 />
                                 <Image
                                     className="hidden h-full w-full lg:block"
                                     src={'/logo.jpeg'}
                                     alt="logo"
-                                    width={50}
-                                    height={50}
+                                    width={40}
+                                    height={20}
                                 />
                             </div>
 
