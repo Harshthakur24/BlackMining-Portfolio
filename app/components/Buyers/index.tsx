@@ -10,29 +10,28 @@ interface cardDataType {
 const cardData: cardDataType[] = [
     {
         imgSrc: '/assets/buyers/ourbuyers.svg',
-        percent: '80k',
-        heading: "Our buyers",
-        subheading: "Follow a hashtag growth total posts, videos and images.",
+        percent: '10k+',
+        heading: "Vehicles Processed",
+        subheading: "Successfully processed and recycled vehicles since our founding.",
     },
     {
         imgSrc: '/assets/buyers/projectcompleted.svg',
-        percent: '90k',
-        heading: "Project completed",
-        subheading: "Follow a hashtag growth total posts, videos and images.",
+        percent: '95%',
+        heading: "Recovery Rate",
+        subheading: "Of vehicle materials successfully recycled and repurposed.",
     },
     {
         imgSrc: '/assets/buyers/happybuyers.svg',
-        percent: '80%',
-        heading: "Happy buyers",
-        subheading: "Follow a hashtag growth total posts, videos and images.",
+        percent: '98%',
+        heading: "Client Satisfaction",
+        subheading: "Positive feedback from our vehicle disposal services.",
     },
     {
         imgSrc: '/assets/buyers/teammembers.svg',
-        percent: '50+',
-        heading: "Team members",
-        subheading: "Follow a hashtag growth total posts, videos and images.",
+        percent: '20+',
+        heading: "Years Experience",
+        subheading: "Providing professional vehicle disposal solutions.",
     }
-
 ]
 
 const Buyers = () => {

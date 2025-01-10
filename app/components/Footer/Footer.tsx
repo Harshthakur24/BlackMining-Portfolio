@@ -10,11 +10,11 @@ interface ProductType {
 const products: ProductType[] = [
     {
         id: 1,
-        link: ['Home', 'Popular', 'About', 'Contact'],
+        link: ['Home', 'Services', 'About', 'Locations'],
     },
     {
         id: 2,
-        link: ['Help', 'Resources', 'Application', 'Team']
+        link: ['Vehicle Disposal', 'Recycling Process', 'Legal Info', 'Contact']
     }
 ]
 
@@ -27,7 +27,10 @@ const footer = () => {
                     {/* COLUMN-1 */}
 
                     <div className='col-span-4 md:col-span-12 lg:col-span-4'>
-                        <img src={'/assets/footer/logo.svg'} alt="logo" className='pb-8' />
+                        <div className="flex items-center gap-6 items-center">
+                            <Image src={'/img3.jpg'} width={50} height={50} alt="logo" className='pb-8' />
+                            <h1 className="text-2xl font-bold text-white">Black Mining</h1>
+                        </div>
                         <div className='flex gap-4'>
                             <Link href="https://facebook.com" className='footer-fb-icons'>
                                 <Image src={'/assets/footer/facebook.svg'} alt="facebook" width={15} height={20} />
@@ -37,7 +40,7 @@ const footer = () => {
                             </Link>
                             <Link href="https://instagram.com" className='footer-icons'>
                                 <Image src={'/assets/footer/instagram.svg'} alt="instagram" width={20} height={20} />
-                            </Link> 
+                            </Link>
                         </div>
                     </div>
 
@@ -60,15 +63,15 @@ const footer = () => {
                     <div className='col-span-4 md:col-span-4 lg:col-span-4'>
                         <div className="flex gap-2">
                             <Image src={'/assets/footer/mask.svg'} alt="mask-icon" width={24} height={24} />
-                            <h5 className="text-base font-normal text-offwhite">925 Filbert Street Pennsylvania 18072</h5>
+                            <h5 className="text-base font-normal text-offwhite">123 Recycling Center Road, Faridabad, Haryana</h5>
                         </div>
                         <div className="flex gap-2 mt-10">
                             <Image src={'/assets/footer/telephone.svg'} alt="telephone-icon" width={24} height={24} />
-                            <h5 className="text-base font-normal text-offwhite">+ 45 34 11 44 11</h5>
+                            <h5 className="text-base font-normal text-offwhite">+91 9999999999</h5>
                         </div>
                         <div className="flex gap-2 mt-10">
                             <Image src={'/assets/footer/email.svg'} alt="email-icon" width={24} height={24} />
-                            <h5 className="text-base font-normal text-offwhite">info@gmail.com</h5>
+                            <h5 className="text-base font-normal text-offwhite">contact@blackmining.com</h5>
                         </div>
                     </div>
 
@@ -77,11 +80,11 @@ const footer = () => {
                 {/* All Rights Reserved */}
 
                 <div className='py-10 lg:flex items-center justify-between border-t border-t-bordertop'>
-                    <h4 className='text-offwhite text-sm text-center lg:text-start font-normal'>@2023 Agency. All Rights Reserved by <Link href="https://adminmart.com/" target="_blank"> Adminmart.com</Link></h4>
+                    <h4 className='text-offwhite text-sm text-center lg:text-start font-normal'>@2024 Black Mining. All Rights Reserved</h4>
                     <div className="flex gap-5 mt-5 lg:mt-0 justify-center lg:justify-start">
-                        <h4 className='text-offwhite text-sm font-normal'><Link href="/" target="_blank">Privacy policy</Link></h4>
+                        <h4 className='text-offwhite text-sm font-normal'><Link href="/" target="_blank">Privacy Policy</Link></h4>
                         <div className="h-5 bg-bordertop w-0.5"></div>
-                        <h4 className='text-offwhite text-sm font-normal'><Link href="/" target="_blank">Terms & conditions</Link></h4>
+                        <h4 className='text-offwhite text-sm font-normal'><Link href="/" target="_blank">Terms & Conditions</Link></h4>
                     </div>
                 </div>
 

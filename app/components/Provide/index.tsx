@@ -10,26 +10,23 @@ interface datatype {
 const Aboutdata: datatype[] = [
     {
         imgSrc: "/assets/provide/marketing.svg",
-        country: "Marketing",
-        paragraph: 'Follow a hashtag total posts, videos',
-
+        country: "Vehicle Assessment",
+        paragraph: 'Professional evaluation of your vehicle condition and fair market value',
     },
     {
         imgSrc: "/assets/provide/graphic.svg",
-        country: "Graphic design",
-        paragraph: 'Follow a hashtag total posts, videos',
-
+        country: "Legal Documentation",
+        paragraph: 'Complete handling of all disposal paperwork and legal requirements',
     },
     {
         imgSrc: "/assets/provide/heaking.svg",
-        country: "Heaking",
-        paragraph: 'Follow a hashtag total posts, videos',
-
+        country: "Eco-Friendly Recycling",
+        paragraph: 'Sustainable disposal with up to 95% material recovery rate',
     },
     {
         imgSrc: "/assets/provide/uidesign.svg",
-        country: "UI/UX Design",
-        paragraph: 'Follow a hashtag total posts, videos',
+        country: "Parts Recovery",
+        paragraph: 'Careful dismantling and recycling of valuable vehicle components',
     },
 ]
 
@@ -44,9 +41,11 @@ const Provide = () => {
                     {/* COLUMN-1 */}
                     <div className='col-span-6 flex justify-center'>
                         <div className="flex flex-col align-middle justify-center p-10">
-                            <p className="text-4xl lg:text-6xl pt-4 font-semibold lh-81 mt-5 text-center lg:text-start">We provide that service.</p>
-                            <h4 className="text-lg pt-4 font-normal lh-33 text-center lg:text-start text-bluegray">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</h4>
-                            <Link href={'/'} className="mt-4 text-xl font-medium text-blue flex gap-2 mx-auto lg:mx-0 space-links">Learn more <Image src={'/assets/provide/arrow.svg'} alt={'arrow'} width={20} height={20} /></Link>
+                            <p className="text-4xl lg:text-6xl pt-4 font-semibold lh-81 mt-5 text-center lg:text-start">Professional Vehicle Disposal Services</p>
+                            <h4 className="text-lg pt-4 font-normal lh-33 text-center lg:text-start text-bluegray">
+                                Black Mining provides comprehensive end-of-life vehicle solutions with a focus on environmental sustainability and maximum value recovery. Our certified team ensures safe, legal, and efficient vehicle disposal while meeting all environmental regulations.
+                            </h4>
+                            <Link href={'/'} className="mt-4 text-xl font-medium text-blue flex gap-2 mx-auto lg:mx-0 space-links">Our Process <Image src={'/assets/provide/arrow.svg'} alt={'arrow'} width={20} height={20} /></Link>
                         </div>
                     </div>
 

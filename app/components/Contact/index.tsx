@@ -8,28 +8,24 @@ interface datatype {
 
 const Aboutdata: datatype[] = [
     {
-        imgSrc: "/assets/network/bangladesh.svg",
-        country: "Bangladesh",
-        paragraph: 'Event madness gathering innoies, & tech enthusiasts in Speced.',
-
+        imgSrc: "/img3.jpg",
+        country: "Seoul Branch",
+        paragraph: 'Main processing center with full vehicle disposal and recycling facilities.',
     },
     {
-        imgSrc: "/assets/network/america.svg",
-        country: "United States",
-        paragraph: 'Event madness gathering innoies, & tech enthusiasts in Speced.',
-
+        imgSrc: "/img3.jpg",
+        country: "Busan Branch",
+        paragraph: 'Specialized in marine and industrial vehicle processing.',
     },
     {
-        imgSrc: "/assets/network/australia.svg",
-        country: "Australia",
-        paragraph: 'Event madness gathering innoies, & tech enthusiasts in Speced.',
-
+        imgSrc: "/img3.jpg",
+        country: "Incheon Branch",
+        paragraph: 'Strategic location for import/export vehicle processing.',
     },
     {
-        imgSrc: "/assets/network/china.svg",
-        country: "China",
-        paragraph: 'Event madness gathering innoies, & tech enthusiasts in Speced.',
-
+        imgSrc: "/img3.jpg",
+        country: "Daegu Branch",
+        paragraph: 'Regional center serving the southeastern region.',
     },
 ]
 

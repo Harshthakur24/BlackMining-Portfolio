@@ -43,7 +43,7 @@ const Data = () => {
               Sign In
             </button>
             <button className="bg-lightblue w-full hover:bg-blue hover:text-white text-blue font-medium my-2 py-2 px-4 rounded">
-              Sign up
+              Contact Us
             </button>
           </div>
         </div>

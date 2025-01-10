@@ -4,9 +4,9 @@ import Link from 'next/link';
 import React from 'react';
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
-import Signdialog from "./Signdialog";
-import Registerdialog from "./Registerdialog";
 
+import Registerdialog from "./Registerdialog";
+import Image from 'next/image';
 
 interface NavigationItem {
     name: string;
@@ -40,15 +40,19 @@ const Navbar = () => {
                             {/* LOGO */}
 
                             <div className="flex flex-shrink-0 items-center">
-                                <img
+                                <Image
                                     className="block h-12 w-40 lg:hidden"
-                                    src={'/assets/logo/logo.png'}
-                                    alt="dsign-logo"
+                                    src={"/img3.jpg"}
+                                    height={5}
+                                    width={5}
+                                    alt="blackmining-logo"
                                 />
-                                <img
+                                <Image
                                     className="hidden h-full w-full lg:block"
-                                    src={'/assets/logo/logo.png'}
-                                    alt="dsign-logo"
+                                    src={"/img3.jpg"}
+                                    height={5}
+                                    width={5}
+                                    alt="blackmining-logo"
                                 />
                             </div>
 
@@ -73,12 +77,10 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        {/* SIGNIN DIALOG */}
-
-                        <Signdialog />
 
 
-                        {/* REGISTER DIALOG */}
+
+                        {/* Contact Us DIALOG */}
 
                         <Registerdialog />
 

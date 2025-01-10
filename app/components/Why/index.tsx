@@ -7,16 +7,16 @@ interface whydata {
 
 const whydata: whydata[] = [
     {
-        heading: "Quality",
-        subheading: "Follow a hashtag growth total posts, videos and images.more revitions",
+        heading: "Expert Valuation",
+        subheading: "Professional assessment of your vehicle's worth, ensuring you receive the best market value for your end-of-life vehicle.",
     },
     {
-        heading: "Communication",
-        subheading: "Follow a hashtag growth total posts, videos and images.more revitions",
+        heading: "Legal Compliance",
+        subheading: "Complete handling of all documentation and compliance with environmental regulations for safe and legal vehicle disposal.",
     },
     {
-        heading: "Reliability",
-        subheading: "Follow a hashtag growth total posts, videos and images.more revitions",
+        heading: "Eco-Friendly",
+        subheading: "Sustainable recycling practices with up to 95% material recovery rate, minimizing environmental impact through proper disposal.",
     }
 ]
 
