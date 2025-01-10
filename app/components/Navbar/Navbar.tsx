@@ -4,9 +4,9 @@ import Link from 'next/link';
 import React from 'react';
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
-
-import Registerdialog from "./Registerdialog";
 import Image from 'next/image';
+import Registerdialog from "./Registerdialog";
+
 
 interface NavigationItem {
     name: string;
@@ -15,7 +15,6 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-    { name: 'Home', href: '/', current: true },
     { name: 'Services', href: '#services', current: false },
     { name: 'About', href: '#about', current: false },
     { name: 'Project', href: '#project', current: false },
@@ -31,7 +30,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = React.useState(false);
 
     return (
-        <Disclosure as="nav" className="navbar">
+        <Disclosure as="nav" className="fixed w-full navbar z-10 top-0">
             <>
                 <div className="mx-auto max-w-7xl px-6 lg:py-4 lg:px-8">
                     <div className="relative flex h-20 items-center justify-between">
@@ -42,17 +41,17 @@ const Navbar = () => {
                             <div className="flex flex-shrink-0 items-center">
                                 <Image
                                     className="block h-12 w-40 lg:hidden"
-                                    src={"/img3.jpg"}
-                                    height={5}
-                                    width={5}
-                                    alt="blackmining-logo"
+                                    src={'/logo.jpeg'}
+                                    alt="logo"
+                                    width={50}
+                                    height={50}
                                 />
                                 <Image
                                     className="hidden h-full w-full lg:block"
-                                    src={"/img3.jpg"}
-                                    height={5}
-                                    width={5}
-                                    alt="blackmining-logo"
+                                    src={'/logo.jpeg'}
+                                    alt="logo"
+                                    width={50}
+                                    height={50}
                                 />
                             </div>
 
@@ -79,8 +78,7 @@ const Navbar = () => {
 
 
 
-
-                        {/* Contact Us DIALOG */}
+                        {/* REGISTER DIALOG */}
 
                         <Registerdialog />
 
