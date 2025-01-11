@@ -36,7 +36,7 @@ const Why = () => {
                             alt="iPad-image"
                             width={800}
                             height={300}
-
+                            className="rounded-3xl"
                         />
                     </div>
 

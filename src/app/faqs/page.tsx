@@ -5,42 +5,41 @@ import { useState } from "react"
 // FAQ data
 const faqs = [
     {
-        question: "What services do you offer?",
-        answer: "We provide comprehensive solutions including web development, mobile applications, and digital transformation services."
+        question: "What services does Black Mining offer?",
+        answer: "We offer complete vehicle disposal services including free vehicle collection, legal documentation handling, and environmentally responsible vehicle processing. We ensure all vehicles are disposed of in compliance with environmental regulations."
     },
     {
-        question: "How can I get started?",
-        answer: "Simply reach out through our contact form or schedule a free consultation call. We'll discuss your needs and create a tailored plan."
+        question: "How do I get started with disposing of my vehicle?",
+        answer: "Simply fill out our contact form with your vehicle details and contact information, or call us directly. We'll arrange a convenient time to collect your vehicle and handle all the necessary paperwork."
     },
     {
-        question: "What is your typical process?",
-        answer: "We follow an agile methodology, starting with requirements gathering, followed by design, development, testing, and deployment phases."
+        question: "Is your vehicle collection service free?",
+        answer: "Yes, we offer free vehicle collection from your location. Our team will come to pick up your vehicle at a time that suits you, whether it's at your home, workplace, or another location."
     },
     {
-        question: "What services do you offer?",
-        answer: "We provide comprehensive solutions including web development, mobile applications, and digital transformation services."
+        question: "What documents do I need to provide?",
+        answer: "You'll need to provide your vehicle registration document (V5C), photo ID, and proof of address. We'll guide you through the documentation process and ensure everything is handled legally."
     },
     {
-        question: "How can I get started?",
-        answer: "Simply reach out through our contact form or schedule a free consultation call. We'll discuss your needs and create a tailored plan."
+        question: "How long does the process take?",
+        answer: "The entire process typically takes 24-48 hours from initial contact to vehicle collection. The actual collection usually takes about 30 minutes, and we handle all paperwork promptly."
     },
     {
-        question: "What is your typical process?",
-        answer: "We follow an agile methodology, starting with requirements gathering, followed by design, development, testing, and deployment phases."
+        question: "Is your service environmentally friendly?",
+        answer: "Yes, we follow strict environmental guidelines in our disposal process. We recycle as many parts as possible and ensure hazardous materials are disposed of properly in accordance with environmental regulations."
     },
     {
-        question: "What services do you offer?",
-        answer: "We provide comprehensive solutions including web development, mobile applications, and digital transformation services."
+        question: "Do you handle all types of vehicles?",
+        answer: "Yes, we handle cars, vans, trucks, and other vehicles regardless of their condition. Whether your vehicle is damaged, non-running, or end-of-life, we can help with its disposal."
     },
     {
-        question: "How can I get started?",
-        answer: "Simply reach out through our contact form or schedule a free consultation call. We'll discuss your needs and create a tailored plan."
+        question: "Will I receive payment for my vehicle?",
+        answer: "Yes, we offer competitive rates based on your vehicle's condition and current market values. We provide free, no-obligation quotes and immediate payment upon collection."
     },
     {
-        question: "What is your typical process?",
-        answer: "We follow an agile methodology, starting with requirements gathering, followed by design, development, testing, and deployment phases."
-    },
-
+        question: "Are you legally certified for vehicle disposal?",
+        answer: "Yes, we are fully licensed and certified for vehicle disposal. We comply with all relevant regulations and provide official documentation for every vehicle we process."
+    }
 ]
 
 function FaqItem({ question, answer, isOpen, onClick }: {

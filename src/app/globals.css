@@ -26,6 +26,10 @@ html:not([data-scroll="0"]) .navbar {
     z-index: 3;
 }
 
+#contact {
+    scroll-margin-top: 150px;
+}
+
 .leafbutton {
     border-radius: 0px 30px 30px 40px;
 }
