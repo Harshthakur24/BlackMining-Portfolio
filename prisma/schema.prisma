@@ -1,0 +1,20 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+model Contact {
+    id          String   @id @default(cuid())
+    ownerName   String
+    phoneNumber String
+    email       String
+    vehicle     String?
+    message     String?
+    createdAt   DateTime @default(now())
+    updatedAt   DateTime @updatedAt
+    formSource  String
+}

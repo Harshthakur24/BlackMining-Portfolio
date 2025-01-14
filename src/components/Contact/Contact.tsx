@@ -1,7 +1,80 @@
 "use client"
+import { useState, FormEvent } from 'react';
 import Image from "next/image";
+import toast from 'react-hot-toast';
 
 const Contact = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+    });
+
+    const handleSubmit = async (e: FormEvent) => {
+        e.preventDefault();
+
+        // Show loading toast
+        const loadingToast = toast.loading('Sending...', {
+            style: {
+                background: 'white',
+                color: '#333',
+                padding: '16px',
+                borderRadius: '10px',
+                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+            },
+        });
+
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    ownerName: formData.name,
+                    email: formData.email,
+                    phoneNumber: 'N/A', // Required field in schema
+                    formSource: 'footer'
+                }),
+            });
+
+            if (response.ok) {
+                toast.dismiss(loadingToast);
+                toast.success('Message sent successfully!', {
+                    duration: 5000,
+                    style: {
+                        background: 'white',
+                        padding: '16px',
+                        borderRadius: '10px',
+                        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+                    }
+                });
+                setFormData({ name: '', email: '' });
+            } else {
+                toast.dismiss(loadingToast);
+                toast.error('Failed to send message', {
+                    style: {
+                        background: 'white',
+                        color: '#ef4444',
+                        padding: '16px',
+                        borderRadius: '10px',
+                        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+                    },
+                });
+            }
+        } catch (error) {
+            toast.dismiss(loadingToast);
+            toast.error('Something went wrong', {
+                style: {
+                    background: 'white',
+                    color: '#ef4444',
+                    padding: '16px',
+                    borderRadius: '10px',
+                    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+                },
+            });
+        }
+    };
+
     return (
         <div className='-mt-32 relative z-3' id="contact2">
             <div className="mx-auto max-w-2xl lg:max-w-7xl bg-blue-500 rounded-3xl">
@@ -27,32 +100,49 @@ const Contact = () => {
                             Ready for professional vehicle disposal? Get in touch for a free valuation.
                             We handle all paperwork and provide compliant, eco-friendly solutions.
                         </h4>
-                        <div className="flex flex-col gap-4">
+                        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                             <div className="flex gap-0">
                                 <input
-                                    type="Name"
-                                    name="q"
+                                    type="text"
+                                    name="name"
+                                    value={formData.name}
+                                    onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
                                     className="py-4 text-sm w-full text-black bg-white rounded-l-lg pl-4"
                                     placeholder="Your name"
-                                    autoComplete="on"
+                                    required
                                 />
-                                <button className="bg-midblue text-white font-medium py-2 px-4 rounded-r-lg">
-                                    <Image src={'/assets/newsletter/plane.svg'} alt="send-icon" width={20} height={20} />
-                                </button>
+                                <div
+                                    className="items-center bg-midblue text-white font-medium py-2 px-4 rounded-r-lg"
+                                >
+                                    <Image src={'/assets/newsletter/plane.svg'} alt="send-icon" width={20} height={20} className='mt-2' />
+                                </div>
                             </div>
+
                             <div className="flex gap-0">
                                 <input
-                                    type="Email address"
-                                    name="q"
+                                    type="email"
+                                    name="email"
+                                    value={formData.email}
+                                    onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
                                     className="py-4 text-sm w-full text-black bg-white rounded-l-lg pl-4"
                                     placeholder="Your email address"
-                                    autoComplete="on"
+                                    required
                                 />
-                                <button className="bg-midblue text-white font-medium py-2 px-4 rounded-r-lg">
-                                    <Image src={'/assets/newsletter/plane.svg'} alt="send-icon" width={20} height={20} />
-                                </button>
+                                <div
+                                    className="items-center bg-midblue text-white font-medium py-2 px-4 rounded-r-lg"
+                                >
+                                    <Image src={'/assets/newsletter/plane.svg'} alt="send-icon" width={20} height={20} className='mt-2' />
+                                </div>
                             </div>
-                        </div>
+
+                            {/* Submit Button */}
+                            <button
+                                type="submit"
+                                className="w-full bg-black text-white font-medium py-4 rounded-lg hover:bg-midblue transition-colors duration-300 mt-4"
+                            >
+                                Send Message
+                            </button>
+                        </form>
                     </div>
 
                 </div>
