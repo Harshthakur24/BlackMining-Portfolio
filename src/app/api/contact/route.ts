@@ -1,6 +1,7 @@
 import { PrismaClient } from '@prisma/client'
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
+import ContactFormEmail from '../../../emails/ContactFormEmail'
 
 // Prevent multiple instances in development
 declare global {
@@ -20,19 +21,19 @@ export async function POST(request: Request) {
     // Validate required fields
     if (!ownerName || !phoneNumber || !email) {
       return NextResponse.json(
-        { success: false, error: 'Required fields are missing' },
+        { error: 'Required fields are missing' },
         { status: 400 }
       )
     }
 
-    // Create contact entry
+    // Create contact in database
     const contact = await prisma.contact.create({
       data: {
         ownerName,
         phoneNumber,
         email,
-        vehicle,
-        message,
+        vehicle: vehicle || undefined,
+        message: message || undefined,
         formSource,
       },
     })
@@ -41,16 +42,18 @@ export async function POST(request: Request) {
     try {
       await resend.emails.send({
         from: 'Black Mining <onboarding@resend.dev>',
-        to: 'thakur2004harsh@gmail.com',
+        to: 'thakur2004harsh@gmail.com', // Your email address
         subject: `New Contact Form Submission - ${formSource}`,
-        text: `
-          Name: ${ownerName}
-          Email: ${email}
-          Phone: ${phoneNumber}
-          Vehicle: ${vehicle || 'Not provided'}
-          Message: ${message || 'Not provided'}
-          Source: ${formSource}
-        `.trim()
+        react: ContactFormEmail({
+          formData: {
+            ownerName,
+            email,
+            phoneNumber,
+            vehicle,
+            message,
+            formSource
+          }
+        })
       })
     } catch (emailError) {
       console.error('Email sending failed:', emailError)
@@ -63,10 +66,9 @@ export async function POST(request: Request) {
     })
 
   } catch (error) {
-    console.error('Contact submission error:', error)
-    return NextResponse.json({ 
-      success: false, 
-      error: 'Failed to process contact submission' 
-    }, { status: 500 })
+    console.error('Request error', error)
+    return NextResponse.json({ error: 'Error creating contact' }, { status: 500 })
+  } finally {
+    await prisma.$disconnect()
   }
 } 

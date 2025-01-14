@@ -1,101 +1,72 @@
-import { Heading } from '@react-email/heading';
+import {
+    Html,
+    Body,
+    Container,
+    Tailwind,
+    Text,
+    Heading,
+} from '@react-email/components'
 
 interface ContactFormEmailProps {
     formData: {
-        ownerName: string;
-        email: string;
-        phoneNumber: string;
-        vehicle?: string;
-        message?: string;
-        formSource: string;
-    };
+        ownerName: string
+        email: string
+        phoneNumber: string
+        vehicle?: string
+        message?: string
+        formSource: string
+    }
 }
 
-export const ContactFormEmail = ({ formData }: ContactFormEmailProps) => {
+export default function ContactFormEmail({ formData }: ContactFormEmailProps) {
     return (
-        <html>
-            <body>
-                <div style={styles.section}>
-                    <div style={styles.container}>
-                        <h1 style={styles.heading}>
+        <Html>
+            <Tailwind>
+                <Body className="bg-gray-100">
+                    <Container className="p-8 rounded-lg shadow-lg bg-white my-8">
+                        <Heading className="text-2xl font-bold text-gray-800 mb-4">
                             New Contact Form Submission
-                        </h1>
-                        <p style={styles.source}>from {formData.formSource}</p>
+                        </Heading>
 
-                        <div style={styles.fieldContainer}>
-                            <p style={styles.label}>Name:</p>
-                            <p style={styles.value}>{formData.ownerName}</p>
-                        </div>
-
-                        <div style={styles.fieldContainer}>
-                            <p style={styles.label}>Email:</p>
-                            <p style={styles.value}>{formData.email}</p>
-                        </div>
-
-                        <div style={styles.fieldContainer}>
-                            <p style={styles.label}>Phone:</p>
-                            <p style={styles.value}>{formData.phoneNumber}</p>
-                        </div>
-
-                        {formData.vehicle && (
-                            <div style={styles.fieldContainer}>
-                                <p style={styles.label}>Vehicle:</p>
-                                <p style={styles.value}>{formData.vehicle}</p>
+                        <div className="space-y-4">
+                            <div>
+                                <Text className="font-semibold text-gray-700">Name:</Text>
+                                <Text className="text-gray-600">{formData.ownerName}</Text>
                             </div>
-                        )}
 
-                        {formData.message && (
-                            <div style={styles.fieldContainer}>
-                                <p style={styles.label}>Message:</p>
-                                <p style={styles.value}>{formData.message}</p>
+                            <div>
+                                <Text className="font-semibold text-gray-700">Email:</Text>
+                                <Text className="text-gray-600">{formData.email}</Text>
                             </div>
-                        )}
-                    </div>
-                </div>
-            </body>
-        </html>
-    );
-};
 
-const styles = {
-    section: {
-        backgroundColor: '#f3f4f6',
-        padding: '48px 0',
-    },
-    container: {
-        margin: '0 auto',
-        padding: '32px',
-        maxWidth: '600px',
-        backgroundColor: '#ffffff',
-        borderRadius: '8px',
-        boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)',
-    },
-    heading: {
-        fontSize: '24px',
-        lineHeight: '32px',
-        fontWeight: '700',
-        color: '#111827',
-        marginBottom: '4px',
-    },
-    source: {
-        fontSize: '16px',
-        color: '#6b7280',
-        marginBottom: '24px',
-    },
-    fieldContainer: {
-        marginBottom: '16px',
-        borderBottom: '1px solid #e5e7eb',
-        paddingBottom: '12px',
-    },
-    label: {
-        fontSize: '14px',
-        color: '#6b7280',
-        marginBottom: '4px',
-    },
-    value: {
-        fontSize: '16px',
-        color: '#111827',
-    },
-};
+                            <div>
+                                <Text className="font-semibold text-gray-700">Phone:</Text>
+                                <Text className="text-gray-600">{formData.phoneNumber}</Text>
+                            </div>
 
-export default ContactFormEmail; 
+                            {formData.vehicle && (
+                                <div>
+                                    <Text className="font-semibold text-gray-700">Vehicle:</Text>
+                                    <Text className="text-gray-600">{formData.vehicle}</Text>
+                                </div>
+                            )}
+
+                            {formData.message && (
+                                <div>
+                                    <Text className="font-semibold text-gray-700">Message:</Text>
+                                    <Text className="text-gray-600">{formData.message}</Text>
+                                </div>
+                            )}
+
+                            <div className="mt-8 pt-4 border-t border-gray-200">
+                                <Text className="text-sm text-gray-500">
+                                    Source: {formData.formSource}
+                                </Text>
+                            </div>
+                        </div>
+                    </Container>
+                </Body>
+            </Tailwind>
+        </Html>
+    )
+} 
