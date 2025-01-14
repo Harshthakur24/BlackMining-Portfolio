@@ -26,48 +26,42 @@ export async function POST(request: Request) {
       )
     }
 
-    // Create contact in database
-    const contact = await prisma.contact.create({
-      data: {
-        ownerName,
-        phoneNumber,
-        email,
-        vehicle: vehicle || undefined,
-        message: message || undefined,
-        formSource,
-      },
-    })
-
-    // Send email notification
-    try {
-      await resend.emails.send({
+    // Run database and email operations concurrently
+    const [contact] = await Promise.all([
+      prisma.contact.create({
+        data: {
+          ownerName: ownerName.trim(),
+          phoneNumber: phoneNumber.trim(),
+          email: email.toLowerCase().trim(),
+          vehicle: vehicle?.trim(),
+          message: message?.trim(),
+          formSource,
+        },
+      }),
+      resend.emails.send({
         from: 'Black Mining <onboarding@resend.dev>',
-        to: 'thakur2004harsh@gmail.com', // Your email address
-        subject: `New Contact Form Submission - ${formSource}`,
+        to: 'thakur2004harsh@gmail.com',
+        subject: `New Contact Request - ${ownerName}`,
         react: ContactFormEmail({
-          formData: {
-            ownerName,
-            email,
-            phoneNumber,
-            vehicle,
-            message,
-            formSource
-          }
+          formData: { ownerName, email, phoneNumber, vehicle, message, formSource }
         })
+      }).catch(error => {
+        console.error('Email sending failed:', error)
+        return null // Don't fail the request if email fails
       })
-    } catch (emailError) {
-      console.error('Email sending failed:', emailError)
-      // Continue even if email fails
-    }
+    ])
 
     return NextResponse.json({ 
       success: true, 
       data: contact 
-    })
+    }, { status: 201 })
 
   } catch (error) {
-    console.error('Request error', error)
-    return NextResponse.json({ error: 'Error creating contact' }, { status: 500 })
+    console.error('Request error:', error)
+    return NextResponse.json({ 
+      success: false, 
+      error: 'Failed to process request' 
+    }, { status: 500 })
   } finally {
     await prisma.$disconnect()
   }
