@@ -8,13 +8,12 @@ datasource db {
 }
 
 model Contact {
-    id          String   @id @default(cuid())
+    id          Int      @id @default(autoincrement())
     ownerName   String
     phoneNumber String
     email       String
     vehicle     String?
     message     String?
+    formSource  String   @default("website")
     createdAt   DateTime @default(now())
-    updatedAt   DateTime @updatedAt
-    formSource  String
 }
