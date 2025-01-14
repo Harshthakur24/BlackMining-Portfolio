@@ -41,7 +41,22 @@ const Data = () => {
             ))}
             <div className="mt-4"></div>
 
-            <button className="bg-lightblue w-full hover:bg-blue hover:text-white text-blue font-medium my-2 py-2 px-4 rounded">
+            <button
+              onClick={() => {
+                const element = document.querySelector('#contact2');
+                if (element) {
+                  const navHeight = document.querySelector('nav')?.getBoundingClientRect().height || 0;
+                  const topBarHeight = document.querySelector('.top-bar')?.getBoundingClientRect().height || 0;
+                  const totalOffset = navHeight + topBarHeight;
+
+                  window.scrollTo({
+                    top: element.getBoundingClientRect().top + window.pageYOffset - totalOffset,
+                    behavior: 'smooth'
+                  });
+                }
+              }}
+              className="bg-lightblue w-full hover:bg-blue hover:text-white text-blue font-medium my-2 py-2 px-4 rounded"
+            >
               Contact Us
             </button>
           </div>

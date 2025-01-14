@@ -23,6 +23,20 @@ const Register = () => {
                     <a
                         href="#contact2"
                         className="text-blue text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out leafbutton bg-lightblue hover:text-white hover:bg-blue"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            const element = document.querySelector('#contact2');
+                            if (element) {
+                                const navHeight = document.querySelector('nav')?.getBoundingClientRect().height || 0;
+                                const topBarHeight = document.querySelector('.top-bar')?.getBoundingClientRect().height || 0;
+                                const totalOffset = navHeight + topBarHeight;
+
+                                window.scrollTo({
+                                    top: element.getBoundingClientRect().top + window.pageYOffset - totalOffset,
+                                    behavior: 'smooth'
+                                });
+                            }
+                        }}
                     >
                         Contact Us
                     </a>
