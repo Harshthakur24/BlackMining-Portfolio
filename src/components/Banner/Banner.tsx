@@ -20,13 +20,13 @@ const Banner = () => {
     }, []);
 
     return (
-        <main className="relative min-h-screen bg-[#fafafa] mt-20 md:mt-28">
+        <main className="relative min-h-screen bg-[#fafafa] mt-10 md:mt-14">
             <div className="container mx-auto px-4 md:px-6">
-                <div className="max-w-7xl mx-auto pt-6 md:pt-24">
+                <div className="max-w-7xl mx-auto pt-12 md:pt-24">
                     <BackgroundLines className="h-full banner-image">
                         {/* Hero Text Section */}
-                        <div className="text-center mb-4 md:mb-8">
-                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold text-navyblue mb-3 md:mb-6 leading-tight">
+                        <div className="text-center mb-10 md:mb-10">
+                            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold text-navyblue mb-2 md:mb-4 leading-tight">
                                 Turn Your Car Into Value <br className="hidden md:block" /> with Black Mining.
                             </h1>
                             <p className="text-base sm:text-lg text-bluegray max-w-2xl mx-auto px-4">
