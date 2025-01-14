@@ -103,7 +103,7 @@ export default function FaqsPage() {
     const [openIndex, setOpenIndex] = useState<number | null>(null)
 
     return (
-        <main className="min-h-screen py-24 px-4 bg-gradient-to-b from-gray-50 to-white mb-56 mt-14 banner-image">
+        <main className="min-h-screen py-24 px-4 bg-gradient-to-b from-gray-50 to-white mb-56 mt-2 banner-image">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}

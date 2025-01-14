@@ -7,7 +7,7 @@ import Link from "next/link"
 
 export default function ServicesPage() {
     return (
-        <main className="mb-48 mt-32 banner-image">
+        <main className="mb-48 mt-6 banner-image">
             <div className="text-center">
                 <h1 className="text-4xl font-semibold text-navyblue sm:text-6xl lg:text-8xl md:4px lh-96">
                     Services we provide <br />
