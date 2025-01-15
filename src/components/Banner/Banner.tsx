@@ -125,12 +125,14 @@ const Banner = () => {
                 }}
             />
             <main className="relative min-h-screen bg-[#fafafa]">
-                <div className="container mx-auto px-4 md:px-6">
-                    <div className="max-w-7xl mx-auto pt-4 md:pt-8">
-                        <BackgroundLines className="h-full banner-image">
+                <div className="absolute inset-0 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+
+                <div className="container relative mx-auto px-4 md:px-6 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:4rem_4rem]">
+                    <div className="max-w-7xl mx-auto pt-4 md:pt-8 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:4rem_4rem]" >
+                        <BackgroundLines className="h-full bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:4rem_4rem]">
                             {/* Hero Text Section */}
-                            <div className="text-center mb-10 md:mb-10">
-                                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold text-navyblue mb-2 md:mb-3 leading-tight">
+                            <div className="text-center mb-6 md:mb-10 mt-8 md:mt-0">
+                                <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold text-navyblue mb-2 md:mb-3 leading-tight">
                                     Turn Your Car Into Value <br className="hidden md:block" /> with Black Mining.
                                 </h1>
                                 <p className="text-base sm:text-lg text-bluegray max-w-2xl mx-auto px-4">
@@ -138,16 +140,19 @@ const Banner = () => {
                                 </p>
                             </div>
 
-                            {/* CTA Buttons */}
-                            <div className="flex flex-col sm:flex-row text-center relative items-center gap-3 sm:gap-4 px-4 justify-center mt-4 mb-9">
+                            {/* CTA Buttons - Fixed alignment */}
+                            <div className="flex flex-row items-center relative justify-center gap-4 px-4 mb-10">
                                 <a
                                     href="#contact"
-                                    className='w-auto text-15px rounded-full text-white font-medium bg-blue py-5 px-12 mt-2 inline-block sm:hover:scale-105 transition duration-300'
+                                    className="text-base rounded-full text-white font-medium bg-blue py-4 px-8 md:py-5 md:px-12 inline-flex items-center justify-center hover:scale-105 transition duration-300"
                                 >
                                     Contact Us
                                 </a>
                                 <Link href="/about">
-                                    <button type="button" className='text-15px ml-4 mt-2 text-blue transition duration-150 ease-in-out hover:text-white hover:bg-blue font-medium py-5 px-14 border border-lightgrey leafbutton'>
+                                    <button
+                                        type="button"
+                                        className="text-base rounded-full text-blue font-medium py-4 px-8 md:py-5 md:px-12 border border-lightgrey inline-flex items-center justify-center transition duration-300 hover:text-white hover:bg-blue leafbutton"
+                                    >
                                         More info
                                     </button>
                                 </Link>
@@ -224,7 +229,7 @@ const Banner = () => {
                                         </div>
                                         <button
                                             type="submit"
-                                            className="h-14 w-full lg:w-auto px-8 bg-blue text-white font-medium rounded-2xl hover:bg-blue/90 transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.1)] hover:shadow-[0_6px_30px_rgba(0,0,0,0.15)] active:scale-[0.98] hover:scale-105"
+                                            className="h-14 lg:w-auto px-8 bg-blue text-white font-medium rounded-2xl hover:bg-blue/90 transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.1)] hover:shadow-[0_6px_30px_rgba(0,0,0,0.15)] active:scale-[0.98] hover:scale-105"
                                         >
                                             Submit
                                         </button>
