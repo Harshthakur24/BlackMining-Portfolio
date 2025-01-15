@@ -9,7 +9,7 @@ export default function GalleryPage() {
 
         <main className="min-h-screen pt-24 px-4 mb-56 banner-image">
             <div className="text-center mb-12">
-                <h1 className="text-8xl font-bold">Our Gallery</h1>
+                <h1 className="text-7xl md:text-8xl font-bold">Our Gallery</h1>
                 <p className="text-gray-600 mt-2">Check out our latest projects</p>
             </div>
             <FocusCards cards={galleryCards} />

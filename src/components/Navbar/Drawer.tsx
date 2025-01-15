@@ -1,59 +1,94 @@
 "use client"
-import React, { ReactNode } from "react";
+import React, { Fragment } from "react";
+import { Dialog, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
-import Image from "next/image";
+import Image from 'next/image'
 
 interface DrawerProps {
-    children: ReactNode;
+    children: React.ReactNode;
     isOpen: boolean;
     setIsOpen: (isOpen: boolean) => void;
 }
 
-const Drawer = ({ children, isOpen, setIsOpen }: DrawerProps) => {
-
+export default function Drawer({ children, isOpen, setIsOpen }: DrawerProps) {
     return (
-        <main
-            className={
-                " fixed overflow-hidden z-10 bg-gray-900 bg-opacity-25 inset-0 transform ease-in-out " +
-                (isOpen
-                    ? " transition-opacity opacity-100 duration-500 translate-x-0  "
-                    : " transition-all delay-500 opacity-0 -translate-x-full  ")
-            }
-        >
-            <section
-                className={
-                    "w-340px max-w-lg left-0 absolute bg-white h-full shadow-xl delay-400 duration-500 ease-in-out transition-all transform " +
-                    (isOpen ? "translate-x-0" : "-translate-x-full")
-                }
-            >
+        <Transition.Root show={isOpen} as={Fragment}>
+            <Dialog as="div" className="relative z-50" onClose={setIsOpen}>
+                <Transition.Child
+                    as={Fragment}
+                    enter="ease-in-out duration-300"
+                    enterFrom="opacity-0"
+                    enterTo="opacity-100"
+                    leave="ease-in-out duration-200"
+                    leaveFrom="opacity-100"
+                    leaveTo="opacity-0"
+                >
+                    <div className="fixed inset-0 bg-black/20 backdrop-blur-sm" />
+                </Transition.Child>
 
-                <article className="relative w-270 max-w-lg pb-10 flex flex-col space-y-6 h-full">
-                    <header className="p-4 flex items-center justify-between"><Image
-                        className="h-12 w-40"
-                        src={"/logo.jpeg"}
-                        alt="Courses-Logo"
-                        width={40}
-                        height={40}
-                        onClick={() => {
-                            setIsOpen(false);
-                        }}
-                    /><XMarkIcon className="block h-6 w-6" onClick={() => {
-                        setIsOpen(false);
-                    }} />
-                    </header>
-                    <div onClick={() => {
-                        setIsOpen(false);
-                    }}>{children}</div>
-                </article>
-            </section>
-            <section
-                className=" w-screen h-full cursor-pointer "
-                onClick={() => {
-                    setIsOpen(false);
-                }}
-            ></section>
-        </main>
+                <div className="fixed inset-0 overflow-hidden">
+                    <div className="absolute inset-0 overflow-hidden">
+                        <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
+                            <Transition.Child
+                                as={Fragment}
+                                enter="transform transition ease-in-out duration-300"
+                                enterFrom="translate-x-full"
+                                enterTo="translate-x-0"
+                                leave="transform transition ease-in-out duration-200"
+                                leaveFrom="translate-x-0"
+                                leaveTo="translate-x-full"
+                            >
+                                <Dialog.Panel className="pointer-events-auto w-screen max-w-md">
+                                    <div className="flex h-full flex-col overflow-y-auto bg-white">
+                                        {/* Header */}
+                                        <div className="px-6 pt-6 pb-4 border-b border-gray-100">
+                                            <div className="flex items-center justify-between">
+                                                <Image
+                                                    src="/logo.png"
+                                                    alt="Logo"
+                                                    width={120}
+                                                    height={40}
+                                                    className="h-8 w-auto"
+                                                />
+                                                <button
+                                                    type="button"
+                                                    className="rounded-full p-2 text-gray-400 hover:bg-gray-50 transition-colors duration-200"
+                                                    onClick={() => setIsOpen(false)}
+                                                >
+                                                    <XMarkIcon className="h-6 w-6" />
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                        {/* Navigation Links */}
+                                        <div className="flex-1 px-6 py-6">
+                                            {children}
+                                        </div>
+
+                                        {/* Contact Info */}
+                                        <div className="px-6 py-6 border-t border-gray-100 bg-gray-50/50">
+                                            <div className="space-y-4">
+                                                <a href="tel:+82-2-123-4567" className="flex items-center gap-3 text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                                                    <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                                    </svg>
+                                                    <span className="text-sm font-medium">+82-2-123-4567</span>
+                                                </a>
+                                                <a href="mailto:contact@blackmining.co.kr" className="flex items-center gap-3 text-gray-600 hover:text-gray-900 transition-colors duration-200">
+                                                    <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                                    </svg>
+                                                    <span className="text-sm font-medium">contact@blackmining.co.kr</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Dialog.Panel>
+                            </Transition.Child>
+                        </div>
+                    </div>
+                </div>
+            </Dialog>
+        </Transition.Root>
     );
 }
-
-export default Drawer;

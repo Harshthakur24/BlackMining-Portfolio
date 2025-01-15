@@ -115,14 +115,14 @@ const Navbar = () => {
                                 <div className="flex flex-shrink-0 items-center">
                                     <Image
                                         className="block h-12 w-40 lg:hidden"
-                                        src={'/logo.jpeg'}
+                                        src={''}
                                         alt="logo"
                                         width={40}
                                         height={20}
                                     />
                                     <Image
                                         className="hidden h-full w-full lg:block"
-                                        src={'/logo.jpeg'}
+                                        src={''}
                                         alt="logo"
                                         width={40}
                                         height={20}
@@ -174,6 +174,33 @@ const Navbar = () => {
             </div>
 
             {/* Drawer remains the same */}
+            <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
+                <div className="space-y-1">
+                    {navigation.map((item) => (
+                        <Link
+                            key={item.name}
+                            href={item.href}
+                            className="flex items-center justify-between px-3 py-4 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-lg group transition-colors duration-200"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            <span>{item.name}</span>
+                            <svg
+                                className="w-5 h-5 text-gray-400 group-hover:text-gray-900 transition-colors duration-200"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth="1.5"
+                                    d="M9 5l7 7-7 7"
+                                />
+                            </svg>
+                        </Link>
+                    ))}
+                </div>
+            </Drawer>
         </>
     )
 }

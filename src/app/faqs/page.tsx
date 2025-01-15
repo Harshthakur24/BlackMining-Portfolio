@@ -103,16 +103,16 @@ export default function FaqsPage() {
     const [openIndex, setOpenIndex] = useState<number | null>(null)
 
     return (
-        <main className="min-h-screen py-24 px-4 bg-gradient-to-b from-gray-50 to-white mb-56 mt-2 banner-image">
+        <main className="min-h-screen py-16 px-4 bg-gradient-to-b from-gray-50 to-white mb-56 mt-2 banner-image">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 className="max-w-4xl mx-auto"
             >
-                <div className="text-center mb-16">
+                <div className="text-center mb-4">
                     <motion.h1
-                        className="text-5xl font-bold text-gray-900 mb-4"
+                        className="text-4xl md:text-5xl font-bold text-gray-900 mb-4"
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
@@ -120,7 +120,7 @@ export default function FaqsPage() {
                         Frequently Asked Questions
                     </motion.h1>
                     <motion.p
-                        className="text-xl text-gray-600"
+                        className="text-md md:text-xl text-gray-600"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.3 }}
