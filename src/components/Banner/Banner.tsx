@@ -127,8 +127,9 @@ const Banner = () => {
             <main className="relative min-h-screen bg-[#fafafa]">
                 <div className="absolute inset-0 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:4rem_4rem]" />
 
-                <div className="container relative mx-auto px-4 md:px-6 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:4rem_4rem]">
-                    <div className="max-w-7xl mx-auto pt-4 md:pt-8 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:4rem_4rem]" >
+
+                <div className="container relative mx-auto px-4 md:px-6">
+                    <div className="max-w-7xl mx-auto pt-4 md:pt-8" >
                         <BackgroundLines className="h-full bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:4rem_4rem]">
                             {/* Hero Text Section */}
                             <div className="text-center mb-6 md:mb-10 mt-8 md:mt-0">
@@ -144,14 +145,14 @@ const Banner = () => {
                             <div className="flex flex-row items-center relative justify-center gap-4 px-4 mb-10">
                                 <a
                                     href="#contact"
-                                    className="text-base rounded-full text-white font-medium bg-blue py-4 px-8 md:py-5 md:px-12 inline-flex items-center justify-center hover:scale-105 transition duration-300"
+                                    className="text-base rounded-full text-white font-medium bg-blue py-3 px-8 sm:py-4 sm:px-8 md:py-5 md:px-12 inline-flex items-center justify-center hover:scale-105 transition duration-300"
                                 >
                                     Contact Us
                                 </a>
                                 <Link href="/about">
                                     <button
                                         type="button"
-                                        className="text-base rounded-full text-blue font-medium py-4 px-8 md:py-5 md:px-12 border border-lightgrey inline-flex items-center justify-center transition duration-300 hover:text-white hover:bg-blue leafbutton"
+                                        className="text-base rounded-full text-blue font-medium py-3 px-8 md:py-5 md:px-12 sm:py-4 sm:px-8 border border-lightgrey inline-flex items-center justify-center transition duration-300 hover:text-white hover:bg-blue leafbutton"
                                     >
                                         More info
                                     </button>
