@@ -122,220 +122,116 @@ const Banner = () => {
 
 
 
-            <div className="relative min-h-screen">
-                <BackgroundLines className="relative min-h-screen bg-[#fafafa] container max-w-7xl mx-auto px-4 md:px-6 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:4rem_4rem]">
-                    {/* Hero Text Section - Added pt classes for spacing */}
-                    <div className="text-center mb-6 md:mb-10 pt-8 md:pt-8">
-                        <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold text-navyblue mb-2 md:mb-3 leading-tight">
-                            Turn Your Car Into Value <br className="hidden md:block" /> with Black Mining.
-                        </h1>
-                        <p className="text-base sm:text-lg text-bluegray max-w-2xl mx-auto px-4">
-                            Your Trusted Partner in Safe and Legal Vehicle Disposal.
-                        </p>
-                    </div>
 
-                    {/* CTA Buttons - Fixed alignment */}
-                    <div className="flex flex-row items-center relative justify-center gap-4 px-4 mb-10 scale-75 md:scale-100">
-                        <a
-                            href="#contact"
-                            className="text-base whitespace-nowrap rounded-full text-white font-medium bg-blue py-3 px-8 sm:py-4 sm:px-8 md:py-5 md:px-12 inline-flex items-center justify-center hover:scale-105 transition duration-300"
+            <BackgroundLines className="h-full relative min-h-screen bg-[#fafafa] container max-w-7xl mx-auto px-4 md:px-6 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:4rem_4rem]">
+                {/* Hero Text Section - Added pt classes for spacing */}
+                <div className="text-center mb-6 md:mb-10 pt-8 md:pt-12">
+                    <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold text-navyblue mb-2 md:mb-3 leading-tight">
+                        Turn Your Car Into Value <br className="hidden md:block" /> with Black Mining.
+                    </h1>
+                    <p className="text-base sm:text-lg text-bluegray max-w-2xl mx-auto px-4">
+                        Your Trusted Partner in Safe and Legal Vehicle Disposal.
+                    </p>
+                </div>
+
+                {/* CTA Buttons - Fixed alignment */}
+                <div className="flex flex-row items-center relative justify-center gap-4 px-4 mb-10 scale-75 md:scale-100">
+                    <a
+                        href="#contact"
+                        className="text-base whitespace-nowrap rounded-full text-white font-medium bg-blue py-3 px-8 sm:py-4 sm:px-8 md:py-5 md:px-12 inline-flex items-center justify-center hover:scale-105 transition duration-300"
+                    >
+                        Contact Us
+                    </a>
+                    <Link href="/about">
+                        <button
+                            type="button"
+                            className="text-base whitespace-nowrap rounded-full text-blue font-medium py-3 px-8 md:py-5 md:px-12 sm:py-4 sm:px-8 border border-lightgrey inline-flex items-center justify-center transition duration-300 hover:text-white hover:bg-blue leafbutton"
                         >
-                            Contact Us
-                        </a>
-                        <Link href="/about">
+                            More info
+                        </button>
+                    </Link>
+                </div>
+
+                {/* Contact Form - Mobile Optimized */}
+                <div id="contact" className="max-w-6xl mx-auto mb-8 md:mb-16 scroll-mt-8 px-4">
+                    <form onSubmit={handleSubmit} className="relative bg-white/60 backdrop-blur-md border border-gray-100 rounded-3xl md:rounded-[30px] p-3 md:p-5 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_8px_40px_rgb(0,0,0,0.09)] transition-all duration-300">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 md:gap-6">
+                            <div className="relative group">
+                                <label className="absolute left-4 -top-2.5 px-2 text-xs text-gray-500">
+                                    <span className="bg-white px-1">Owner Name</span>
+                                </label>
+                                <input
+                                    name="ownerName"
+                                    value={formData.ownerName}
+                                    onChange={handleChange}
+                                    type="text"
+                                    placeholder="Your Name"
+                                    className="h-14 w-full px-5 border-2 border-gray-100 rounded-2xl focus:outline-none focus:border-blue/40 focus:ring-2 focus:ring-blue/20 bg-white/80 transition-all duration-300 placeholder:text-gray-300 placeholder:scale-95"
+                                />
+                            </div>
+                            <div className="relative group">
+                                <label className="absolute left-4 -top-2.5 px-2 text-xs text-gray-500">
+                                    <span className="bg-white px-1">Phone</span>
+                                </label>
+                                <input
+                                    name="phoneNumber"
+                                    value={formData.phoneNumber}
+                                    onChange={handleChange}
+                                    type="tel"
+                                    placeholder="Your Number"
+                                    className="h-14 w-full px-5 border-2 border-gray-100 rounded-2xl focus:outline-none focus:border-blue/40 focus:ring-2 focus:ring-blue/20 bg-white/80 transition-all duration-300 placeholder:text-gray-300 placeholder:scale-95"
+                                />
+                            </div>
+                            <div className="relative group">
+                                <label className="absolute left-4 -top-2.5 px-2 text-xs text-gray-500">
+                                    <span className="bg-white px-1">Email</span>
+                                </label>
+                                <input
+                                    name="email"
+                                    value={formData.email}
+                                    onChange={handleChange}
+                                    type="email"
+                                    placeholder="Your Email"
+                                    className="h-14 w-full px-5 border-2 border-gray-100 rounded-2xl focus:outline-none focus:border-blue/40 focus:ring-2 focus:ring-blue/20 bg-white/80 transition-all duration-300 placeholder:text-gray-300 placeholder:scale-95"
+                                />
+                            </div>
+                            <div className="relative group">
+                                <label className="absolute left-4 -top-2.5 px-2 text-xs text-gray-500">
+                                    <span className="bg-white px-1">Vehicle</span>
+                                </label>
+                                <input
+                                    name="vehicle"
+                                    value={formData.vehicle}
+                                    onChange={handleChange}
+                                    type="text"
+                                    placeholder="Vechile Name"
+                                    className="h-14 w-full px-5 border-2 border-gray-100 rounded-2xl focus:outline-none focus:border-blue/40 focus:ring-2 focus:ring-blue/20 bg-white/80 transition-all duration-300 placeholder:text-gray-300 placeholder:scale-95"
+                                />
+                            </div>
+                            <div className="relative group">
+                                <label className="absolute left-4 -top-2.5 px-2 text-xs text-gray-500">
+                                    <span className="bg-white px-1">Message</span>
+                                </label>
+                                <input
+                                    name="message"
+                                    value={formData.message}
+                                    onChange={handleChange}
+                                    type="text"
+                                    placeholder="Your message"
+                                    className="h-14 w-full px-5 border-2 border-gray-100 rounded-2xl focus:outline-none focus:border-blue/40 focus:ring-2 focus:ring-blue/20 bg-white/80 transition-all duration-300 placeholder:text-gray-300 placeholder:scale-95"
+                                />
+                            </div>
                             <button
-                                type="button"
-                                className="text-base whitespace-nowrap rounded-full text-blue font-medium py-3 px-8 md:py-5 md:px-12 sm:py-4 sm:px-8 border border-lightgrey inline-flex items-center justify-center transition duration-300 hover:text-white hover:bg-blue leafbutton"
+                                type="submit"
+                                className="h-14 lg:w-auto px-8 bg-blue text-white font-medium rounded-2xl hover:bg-blue/90 transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.1)] hover:shadow-[0_6px_30px_rgba(0,0,0,0.15)] active:scale-[0.98] hover:scale-105"
                             >
-                                More info
+                                Submit
                             </button>
-                        </Link>
-                    </div>
-
-                    {/* Contact Form - Mobile Optimized */}
-                    <div id="contact" className="max-w-6xl mx-auto mb-8 md:mb-16 scroll-mt-8 px-4">
-                        <form onSubmit={handleSubmit} className="relative bg-white/60 backdrop-blur-md border border-gray-100 rounded-3xl md:rounded-[30px] p-3 md:p-5 shadow-[0_8px_30px_rgb(0,0,0,0.06)] hover:shadow-[0_8px_40px_rgb(0,0,0,0.09)] transition-all duration-300">
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 md:gap-6">
-                                <div className="relative group">
-                                    <label className="absolute left-4 -top-2.5 px-2 text-xs text-gray-500">
-                                        <span className="bg-white px-1">Owner Name</span>
-                                    </label>
-                                    <input
-                                        name="ownerName"
-                                        value={formData.ownerName}
-                                        onChange={handleChange}
-                                        type="text"
-                                        placeholder="Your Name"
-                                        className="h-14 w-full px-5 border-2 border-gray-100 rounded-2xl focus:outline-none focus:border-blue/40 focus:ring-2 focus:ring-blue/20 bg-white/80 transition-all duration-300 placeholder:text-gray-300 placeholder:scale-95"
-                                    />
-                                </div>
-                                <div className="relative group">
-                                    <label className="absolute left-4 -top-2.5 px-2 text-xs text-gray-500">
-                                        <span className="bg-white px-1">Phone</span>
-                                    </label>
-                                    <input
-                                        name="phoneNumber"
-                                        value={formData.phoneNumber}
-                                        onChange={handleChange}
-                                        type="tel"
-                                        placeholder="Your Number"
-                                        className="h-14 w-full px-5 border-2 border-gray-100 rounded-2xl focus:outline-none focus:border-blue/40 focus:ring-2 focus:ring-blue/20 bg-white/80 transition-all duration-300 placeholder:text-gray-300 placeholder:scale-95"
-                                    />
-                                </div>
-                                <div className="relative group">
-                                    <label className="absolute left-4 -top-2.5 px-2 text-xs text-gray-500">
-                                        <span className="bg-white px-1">Email</span>
-                                    </label>
-                                    <input
-                                        name="email"
-                                        value={formData.email}
-                                        onChange={handleChange}
-                                        type="email"
-                                        placeholder="Your Email"
-                                        className="h-14 w-full px-5 border-2 border-gray-100 rounded-2xl focus:outline-none focus:border-blue/40 focus:ring-2 focus:ring-blue/20 bg-white/80 transition-all duration-300 placeholder:text-gray-300 placeholder:scale-95"
-                                    />
-                                </div>
-                                <div className="relative group">
-                                    <label className="absolute left-4 -top-2.5 px-2 text-xs text-gray-500">
-                                        <span className="bg-white px-1">Vehicle</span>
-                                    </label>
-                                    <input
-                                        name="vehicle"
-                                        value={formData.vehicle}
-                                        onChange={handleChange}
-                                        type="text"
-                                        placeholder="Vechile Name"
-                                        className="h-14 w-full px-5 border-2 border-gray-100 rounded-2xl focus:outline-none focus:border-blue/40 focus:ring-2 focus:ring-blue/20 bg-white/80 transition-all duration-300 placeholder:text-gray-300 placeholder:scale-95"
-                                    />
-                                </div>
-                                <div className="relative group">
-                                    <label className="absolute left-4 -top-2.5 px-2 text-xs text-gray-500">
-                                        <span className="bg-white px-1">Message</span>
-                                    </label>
-                                    <input
-                                        name="message"
-                                        value={formData.message}
-                                        onChange={handleChange}
-                                        type="text"
-                                        placeholder="Your message"
-                                        className="h-14 w-full px-5 border-2 border-gray-100 rounded-2xl focus:outline-none focus:border-blue/40 focus:ring-2 focus:ring-blue/20 bg-white/80 transition-all duration-300 placeholder:text-gray-300 placeholder:scale-95"
-                                    />
-                                </div>
-                                <button
-                                    type="submit"
-                                    className="h-14 lg:w-auto px-8 bg-blue text-white font-medium rounded-2xl hover:bg-blue/90 transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.1)] hover:shadow-[0_6px_30px_rgba(0,0,0,0.15)] active:scale-[0.98] hover:scale-105"
-                                >
-                                    Submit
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-
-                    {/* Images Section - Desktop Only */}
-                    {isDesktop && (
-                        <div className="hidden md:block overflow-hidden relative w-full py-4">
-                            <div className="flex animate-infinite-scroll gap-6 pr-6">
-                                {/* First set */}
-                                <div className="flex gap-6 shrink-0">
-                                    <Image
-                                        src={'/img6.jpeg'}
-                                        alt="banner-image"
-                                        width={170}
-                                        height={100}
-                                        className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
-                                    />
-                                    <Image
-                                        src={'/img-main.jpeg'}
-                                        alt="banner-image"
-                                        width={170}
-                                        height={100}
-                                        className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
-                                    />
-                                    <Image
-                                        src={'/img5.jpeg'}
-                                        alt="banner-image"
-                                        width={170}
-                                        height={100}
-                                        className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
-                                    />
-                                    <Image
-                                        src={'/img3.jpg'}
-                                        alt="banner-image"
-                                        width={170}
-                                        height={100}
-                                        className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
-                                    />
-                                </div>
-
-                                {/* Second set */}
-                                <div className="flex gap-6 shrink-0">
-                                    <Image
-                                        src={'/img6.jpeg'}
-                                        alt="banner-image"
-                                        width={170}
-                                        height={100}
-                                        className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
-                                    />
-                                    <Image
-                                        src={'/img-main.jpeg'}
-                                        alt="banner-image"
-                                        width={170}
-                                        height={100}
-                                        className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
-                                    />
-                                    <Image
-                                        src={'/img5.jpeg'}
-                                        alt="banner-image"
-                                        width={170}
-                                        height={100}
-                                        className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
-                                    />
-                                    <Image
-                                        src={'/img3.jpg'}
-                                        alt="banner-image"
-                                        width={170}
-                                        height={100}
-                                        className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
-                                    />
-                                </div>
-
-                                {/* Third set for extra smoothness */}
-                                <div className="flex gap-6 shrink-0">
-                                    <Image
-                                        src={'/img6.jpeg'}
-                                        alt="banner-image"
-                                        width={170}
-                                        height={100}
-                                        className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
-                                    />
-                                    <Image
-                                        src={'/img-main.jpeg'}
-                                        alt="banner-image"
-                                        width={170}
-                                        height={100}
-                                        className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
-                                    />
-                                    <Image
-                                        src={'/img5.jpeg'}
-                                        alt="banner-image"
-                                        width={170}
-                                        height={100}
-                                        className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
-                                    />
-                                    <Image
-                                        src={'/img3.jpg'}
-                                        alt="banner-image"
-                                        width={170}
-                                        height={100}
-                                        className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
-                                    />
-                                </div>
-                            </div>
                         </div>
-                    )}
+                    </form>
                     {!isDesktop && (
-                        <div className="md:hidden w-full py-4 mb-8">
-                            <div className="relative overflow-hidden rounded-2xl">
+                        <div className="py-4 mb-2 mt-8">
+                            <div className="rounded-2xl">
                                 {/* Stacked Image Cards with Hover Effects */}
                                 <div className="flex flex-col gap-4 px-4">
                                     <div className="relative group">
@@ -401,13 +297,119 @@ const Banner = () => {
                                     </div>
 
 
+
                                 </div>
                             </div>
                         </div>
                     )}
-                </BackgroundLines>
+                </div>
 
-            </div>
+                {/* Images Section - Desktop Only */}
+                {isDesktop && (
+                    <div className="hidden md:block overflow-hidden relative w-full py-4">
+                        <div className="flex animate-infinite-scroll gap-6 pr-6">
+                            {/* First set */}
+                            <div className="flex gap-6 shrink-0">
+                                <Image
+                                    src={'/img6.jpeg'}
+                                    alt="banner-image"
+                                    width={170}
+                                    height={100}
+                                    className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
+                                />
+                                <Image
+                                    src={'/img-main.jpeg'}
+                                    alt="banner-image"
+                                    width={170}
+                                    height={100}
+                                    className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
+                                />
+                                <Image
+                                    src={'/img5.jpeg'}
+                                    alt="banner-image"
+                                    width={170}
+                                    height={100}
+                                    className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
+                                />
+                                <Image
+                                    src={'/img3.jpg'}
+                                    alt="banner-image"
+                                    width={170}
+                                    height={100}
+                                    className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
+                                />
+                            </div>
+
+                            {/* Second set */}
+                            <div className="flex gap-6 shrink-0">
+                                <Image
+                                    src={'/img6.jpeg'}
+                                    alt="banner-image"
+                                    width={170}
+                                    height={100}
+                                    className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
+                                />
+                                <Image
+                                    src={'/img-main.jpeg'}
+                                    alt="banner-image"
+                                    width={170}
+                                    height={100}
+                                    className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
+                                />
+                                <Image
+                                    src={'/img5.jpeg'}
+                                    alt="banner-image"
+                                    width={170}
+                                    height={100}
+                                    className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
+                                />
+                                <Image
+                                    src={'/img3.jpg'}
+                                    alt="banner-image"
+                                    width={170}
+                                    height={100}
+                                    className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
+                                />
+                            </div>
+
+                            {/* Third set for extra smoothness */}
+                            <div className="flex gap-6 shrink-0">
+                                <Image
+                                    src={'/img6.jpeg'}
+                                    alt="banner-image"
+                                    width={170}
+                                    height={100}
+                                    className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
+                                />
+                                <Image
+                                    src={'/img-main.jpeg'}
+                                    alt="banner-image"
+                                    width={170}
+                                    height={100}
+                                    className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
+                                />
+                                <Image
+                                    src={'/img5.jpeg'}
+                                    alt="banner-image"
+                                    width={170}
+                                    height={100}
+                                    className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
+                                />
+                                <Image
+                                    src={'/img3.jpg'}
+                                    alt="banner-image"
+                                    width={170}
+                                    height={100}
+                                    className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                )}
+
+            </BackgroundLines>
+
+
 
         </>
     );
