@@ -42,6 +42,15 @@ const Banner = () => {
         });
 
         try {
+            // Validate form data before sending
+            if (!formData.ownerName || !formData.email || !formData.phoneNumber) {
+                toast.error('Please fill in all required fields', { id: loadingToast });
+                return;
+            }
+
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 10000);
+
             const response = await fetch('/api/contact', {
                 method: 'POST',
                 headers: {
@@ -51,54 +60,38 @@ const Banner = () => {
                     ...formData,
                     formSource: 'banner'
                 }),
+                signal: controller.signal
             });
 
-            if (response.ok) {
-                // Dismiss loading toast and show success
-                toast.dismiss(loadingToast);
-                toast.success('Message sent successfully!', {
-                    duration: 5000,
-                    style: {
-                        background: 'white',
-                        padding: '16px',
-                        borderRadius: '10px',
-                        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
-                    },
-                });
+            clearTimeout(timeoutId);
 
-                // Reset form
-                setFormData({
-                    ownerName: '',
-                    phoneNumber: '',
-                    email: '',
-                    vehicle: '',
-                    message: ''
-                });
-            } else {
-
-                toast.dismiss(loadingToast);
-                toast.error('Failed to send message. Please try again.', {
-                    style: {
-                        background: 'white',
-                        color: '#ef4444',
-                        padding: '16px',
-                        borderRadius: '10px',
-                        boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
-                    },
-                });
+            if (!response.ok) {
+                const error = await response.json();
+                throw new Error(error.message || 'Failed to send message');
             }
-        } catch (error) {
-            // Dismiss loading and show error
-            toast.dismiss(loadingToast);
-            toast.error('Something went wrong. Please try again.', {
-                style: {
-                    background: 'white',
-                    color: '#ef4444',
-                    padding: '16px',
-                    borderRadius: '10px',
-                    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
-                },
+
+            // Clear form on success
+            setFormData({
+                ownerName: '',
+                phoneNumber: '',
+                email: '',
+                vehicle: '',
+                message: ''
             });
+
+            toast.success('Message sent successfully!', { id: loadingToast });
+        } catch (error) {
+            console.error('Form submission error:', error);
+
+            if (error instanceof Error) {
+                if (error.name === 'AbortError') {
+                    toast.error('Request timed out. Please try again.', { id: loadingToast });
+                } else {
+                    toast.error(error.message || 'Failed to send message', { id: loadingToast });
+                }
+            } else {
+                toast.error('An unexpected error occurred', { id: loadingToast });
+            }
         }
     };
 
@@ -142,17 +135,17 @@ const Banner = () => {
                             </div>
 
                             {/* CTA Buttons - Fixed alignment */}
-                            <div className="flex flex-row items-center relative justify-center gap-4 px-4 mb-10">
+                            <div className="flex flex-row items-center relative justify-center gap-4 px-4 mb-10 scale-75 md:scale-100">
                                 <a
                                     href="#contact"
-                                    className="text-base rounded-full text-white font-medium bg-blue py-3 px-8 sm:py-4 sm:px-8 md:py-5 md:px-12 inline-flex items-center justify-center hover:scale-105 transition duration-300"
+                                    className="text-base whitespace-nowrap rounded-full text-white font-medium bg-blue py-3 px-8 sm:py-4 sm:px-8 md:py-5 md:px-12 inline-flex items-center justify-center hover:scale-105 transition duration-300"
                                 >
                                     Contact Us
                                 </a>
                                 <Link href="/about">
                                     <button
                                         type="button"
-                                        className="text-base rounded-full text-blue font-medium py-3 px-8 md:py-5 md:px-12 sm:py-4 sm:px-8 border border-lightgrey inline-flex items-center justify-center transition duration-300 hover:text-white hover:bg-blue leafbutton"
+                                        className="text-base whitespace-nowrap rounded-full text-blue font-medium py-3 px-8 md:py-5 md:px-12 sm:py-4 sm:px-8 border border-lightgrey inline-flex items-center justify-center transition duration-300 hover:text-white hover:bg-blue leafbutton"
                                     >
                                         More info
                                     </button>
