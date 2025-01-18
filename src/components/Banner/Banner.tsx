@@ -135,7 +135,7 @@ const Banner = () => {
                 </div>
 
                 {/* CTA Buttons - Fixed alignment */}
-                <div className="flex flex-row items-center relative justify-center gap-4 px-4 mb-10 scale-75 md:scale-100">
+                <div className="flex flex-row items-center relative justify-center gap-4 px-4 mb-7 scale-75 md:scale-100">
                     <a
                         href="#contact"
                         className="text-base whitespace-nowrap rounded-full text-white font-medium bg-blue py-3 px-8 sm:py-4 sm:px-8 md:py-5 md:px-12 inline-flex items-center justify-center hover:scale-105 transition duration-300"

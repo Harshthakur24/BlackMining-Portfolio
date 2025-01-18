@@ -7,7 +7,7 @@ import Link from "next/link"
 
 export default function ServicesPage() {
     return (
-        <main className="mb-28 mt-6 banner-image">
+        <main className="mb-40 md:mb-28 mt-6 banner-image">
             <div className="text-center">
                 <h1 className="text-4xl font-semibold text-navyblue sm:text-6xl lg:text-8xl md:4px lh-96">
                     Services we provide <br />
@@ -18,13 +18,13 @@ export default function ServicesPage() {
             </div>
             <div>
                 {/*  SERVICE-1 */}
-                <div className='mx-auto max-w-7xl px-4 my-10 sm:py-20 lg:px-8'>
+                <div className='mx-auto max-w-7xl px-4 my-2 sm:my-10 py-2 sm:py-6 md:py-20 lg:px-8'>
                     <div className='grid grid-cols-1 lg:grid-cols-12 gap-8'>
 
                         {/* COLUMN-1 */}
                         <div className='col-span-6 flex justify-center'>
                             <div className="flex flex-col align-middle justify-center p-10">
-                                <p className="text-4xl lg:text-6xl pt-4 font-semibold lh-81 mt-5 text-center lg:text-start">1. First Service that we provide to customers</p>
+                                <p className="text-3xl md:text-4xl lg:text-6xl pt-4 font-semibold lh-81 mt-5 text-center lg:text-start">1. First Service that we provide to customers</p>
                                 <h4 className="text-lg pt-4 font-normal lh-33 text-center lg:text-start text-bluegray">
                                     Black Mining provides comprehensive end-of-life vehicle solutions with a focus on environmental sustainability and maximum value recovery. Our certified team ensures safe, legal, and efficient vehicle disposal while meeting all environmental regulations.
                                 </h4>
@@ -62,7 +62,7 @@ export default function ServicesPage() {
                         {/* COLUMN-1 */}
                         <div className='col-span-6 flex justify-center'>
                             <div className="flex flex-col align-middle justify-center p-10">
-                                <p className="text-4xl lg:text-6xl pt-4 font-semibold lh-81 mt-5 text-center lg:text-start">2. Second Service that we provide to customers</p>
+                                <p className="text-3xl md:text-4xl lg:text-6xl pt-4 font-semibold lh-81 mt-5 text-center lg:text-start">2. Second Service that we provide to customers</p>
                                 <h4 className="text-lg pt-4 font-normal lh-33 text-center lg:text-start text-bluegray">
                                     Black Mining provides comprehensive end-of-life vehicle solutions with a focus on environmental sustainability and maximum value recovery. Our certified team ensures safe, legal, and efficient vehicle disposal while meeting all environmental regulations.
                                 </h4>
@@ -79,7 +79,7 @@ export default function ServicesPage() {
                         {/* COLUMN-1 */}
                         <div className='col-span-6 flex justify-center'>
                             <div className="flex flex-col align-middle justify-center p-10">
-                                <p className="text-4xl lg:text-6xl pt-4 font-semibold lh-81 mt-5 text-center lg:text-start">3. Third Service that we provide to customers</p>
+                                <p className="text-3xl md:text-4xl lg:text-6xl pt-4 font-semibold lh-81 mt-5 text-center lg:text-start">3. Third Service that we provide to customers</p>
                                 <h4 className="text-lg pt-4 font-normal lh-33 text-center lg:text-start text-bluegray">
                                     Black Mining provides comprehensive end-of-life vehicle solutions with a focus on environmental sustainability and maximum value recovery. Our certified team ensures safe, legal, and efficient vehicle disposal while meeting all environmental regulations.
                                 </h4>
@@ -117,7 +117,7 @@ export default function ServicesPage() {
                         {/* COLUMN-1 */}
                         <div className='col-span-6 flex justify-center'>
                             <div className="flex flex-col align-middle justify-center p-10">
-                                <p className="text-4xl lg:text-6xl pt-4 font-semibold lh-81 mt-5 text-center lg:text-start">4. Fourth Service that we provide to customers</p>
+                                <p className="text-3xl md:text-4xl lg:text-6xl pt-4 font-semibold lh-81 mt-5 text-center lg:text-start">4. Fourth Service that we provide to customers</p>
                                 <h4 className="text-lg pt-4 font-normal lh-33 text-center lg:text-start text-bluegray">
                                     Black Mining provides comprehensive end-of-life vehicle solutions with a focus on environmental sustainability and maximum value recovery. Our certified team ensures safe, legal, and efficient vehicle disposal while meeting all environmental regulations.
                                 </h4>
