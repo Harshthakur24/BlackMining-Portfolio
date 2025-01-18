@@ -92,10 +92,10 @@ const Navbar = () => {
                             <i className="fas fa-mining mr-2"></i>Black Mining
                         </span>
                         <span className="text-xs sm:text-sm whitespace-nowrap">
-                            <i className="fas fa-phone mr-2"></i>+1 (234) 567-8900
+                            <i className="fas fa-phone mr-2"></i>+91 8989898993
                         </span>
                         <span className="text-xs sm:text-sm whitespace-nowrap">
-                            <i className="fas fa-envelope mr-2"></i>info@example.com
+                            <i className="fas fa-envelope mr-2"></i>blackminingjunk@gmail.com
                         </span>
 
                     </div>
@@ -114,15 +114,15 @@ const Navbar = () => {
 
                                 <div className="flex flex-shrink-0 items-center">
                                     <Image
-                                        className="block h-12 w-40 lg:hidden"
-                                        src={''}
+                                        className="block h-16 w-40 lg:hidden"
+                                        src={'/logo.png'}
                                         alt="logo"
-                                        width={40}
-                                        height={20}
+                                        width={100}
+                                        height={100}
                                     />
                                     <Image
                                         className="hidden h-full w-full lg:block"
-                                        src={''}
+                                        src={'/logo.png'}
                                         alt="logo"
                                         width={40}
                                         height={20}

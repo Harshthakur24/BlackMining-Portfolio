@@ -1,27 +1,27 @@
 export const galleryCards = [
   {
     title: "Project 1",
-    src: "/img5.jpeg",
+    src: "/img4.jpg",
   },
   {
     title: "Project 2",
-    src: "/img5.jpeg",
+    src: "/g1.jpg",
   },
   {
     title: "Project 3",
-    src: "/img5.jpeg",
+    src: "/img3.jpg",
   },
   {
     title: "Project 4",
-    src: "/img5.jpeg",
+    src: "/g2.avif",
   },
   {
     title: "Project 5",
-    src: "/img5.jpeg",
+    src: "/g3.webp",
   },
   {
     title: "Project 6",
-    src: "/img5.jpeg",
+    src: "/g4.jpeg",
   },
 ];
 

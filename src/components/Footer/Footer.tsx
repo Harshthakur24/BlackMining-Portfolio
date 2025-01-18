@@ -28,8 +28,8 @@ const footer = () => {
                     {/* COLUMN-1 */}
 
                     <div className='col-span-4 md:col-span-12 lg:col-span-4'>
-                        <div className="flex items-center gap-6">
-                            <Image src={'/img3.jpg'} width={50} height={50} alt="logo" className='pb-8' />
+                        <div className="flex gap-6">
+                            <Image src={'/logo.png'} width={50} height={50} alt="logo" className='pb-8 -mt-1' />
                             <h1 className="text-2xl font-bold text-white">Black Mining</h1>
                         </div>
                         <div className='flex gap-4'>
