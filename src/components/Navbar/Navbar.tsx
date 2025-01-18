@@ -85,9 +85,9 @@ const Navbar = () => {
     return (
         <>
             {/* Top Bar - Add className for reference */}
-            <div className="top-bar items-center bg-black text-white py-1.5 sm:py-2">
-                <div className="max-w-6xl mx-auto px-4 lg:px-8">
-                    <div className="flex justify-center items-center space-x-4 md:space-x-36">
+            <div className="top-bar bg-black text-white py-1.5 sm:py-2">
+                <div className="w-full px-4 lg:px-8">
+                    <div className="flex justify-center items-center">
                         <span className="text-xs sm:text-sm whitespace-nowrap">
                             <i className="fas fa-mining mr-2"></i>Black Mining
                         </span>
@@ -101,6 +101,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
+
 
             {/* Main Navbar - Add nav tag for reference */}
             <div className={`w-full bg-white shadow-sm transition-transform duration-300 sticky top-0 z-50

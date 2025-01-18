@@ -28,37 +28,37 @@ export const galleryCards = [
 export const testimonials = [
     {
       quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
-      src: "/img5.jpeg",
+        "The vehicle processing facility is state-of-the-art with excellent safety protocols. Their commitment to environmental standards is impressive.",
+      name: "Seoul Processing Center",
+      designation: "Main Vehicle Processing Facility",
+      src: "/g1.jpg",
     },
     {
       quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
-      src: "/img5.jpeg",
+        "Advanced recycling equipment and efficient processing systems make this one of our most productive facilities.",
+      name: "Busan Recycling Hub",
+      designation: "Specialized Marine Vehicle Processing Center",
+      src: "/img3.jpg",
     },
     {
       quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
-      src: "/img5.jpeg",
+        "Strategic location with excellent logistics support. Perfect for handling large volume vehicle processing.",
+      name: "Incheon Port Facility",
+      designation: "Import/Export Processing Center",
+      src: "/g3.webp",
     },
     {
       quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
-      src: "/img5.jpeg",
+        "Modern equipment and skilled team handling complex vehicle dismantling with precision.",
+      name: "Daegu Technical Center",
+      designation: "Advanced Dismantling Facility",
+      src: "/g4.jpeg",
     },
     {
       quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "/img5.jpeg",
+        "Innovative recycling processes and high material recovery rates make this facility a benchmark in sustainability.",
+      name: "Gwangju Eco Center",
+      designation: "Sustainable Processing Hub",
+      src: "/img4.jpg",
     },
   ];
