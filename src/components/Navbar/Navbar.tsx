@@ -87,7 +87,7 @@ const Navbar = () => {
             {/* Top Bar - Add className for reference */}
             <div className="top-bar bg-black text-white py-1.5 sm:py-2">
                 <div className="w-full px-4 lg:px-8">
-                    <div className="flex justify-center items-center">
+                    <div className="flex justify-center items-center md:space-x-36">
                         <span className="text-xs sm:text-sm whitespace-nowrap">
                             <i className="fas fa-mining mr-2"></i>Black Mining
                         </span>
