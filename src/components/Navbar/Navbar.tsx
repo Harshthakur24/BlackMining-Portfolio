@@ -100,18 +100,18 @@ const Navbar = () => {
             {/* Top Bar - Add className for reference */}
             <div className="top-bar bg-black text-white py-1.5 sm:py-2">
                 <div className="w-full">
-                    <div className="w-full flex justify-center items-center gap-4 md:space-x-64">
+                    <div className="w-full flex justify-center items-center gap-16 md:space-x-64">
 
                         <span className="text-xs sm:text-sm whitespace-nowrap">
-                            <i className="fas fa-phone mr-2"></i>+91 8989898993
+                            <i className="fas fa-phone mr-2"></i>+91 89 89 89 89 93
                         </span>
                         {isDesktop && (
                             <span className="text-xs sm:text-sm whitespace-nowrap">
-                                <i className="fas fa-mining mr-2"></i>Black Mining
+                                <i className="fas fa-mining mr-2"></i>Khasra no. 103 Barhana Jhajjar
                             </span>
                         )}
                         <span className="text-xs sm:text-sm whitespace-nowrap">
-                            <i className="fas fa-envelope mr-2"></i>blackminingjunk@gmail.com
+                            <i className="fas fa-envelope mr-2"></i>Blackminingjunk@gmail.com
                         </span>
 
                     </div>
@@ -132,14 +132,14 @@ const Navbar = () => {
                                 <div className="flex w-20 h-30 flex-shrink-0 items-center">
                                     <Image
                                         className="block h-16 w-40 lg:hidden"
-                                        src={'/logo.png'}
+                                        src={'/logo-main.png'}
                                         alt="logo"
                                         width={100}
                                         height={100}
                                     />
                                     <Image
                                         className="hidden h-full w-full lg:block"
-                                        src={'/logo.png'}
+                                        src={'/logo-main.png'}
                                         alt="logo"
                                         width={40}
                                         height={20}

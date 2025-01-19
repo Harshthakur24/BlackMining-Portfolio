@@ -14,7 +14,6 @@ export default function Home() {
       <Buyers />
       <Provide />
       <Why />
-      <Network />
       <Clientsay />
       <Contact />
     </main>

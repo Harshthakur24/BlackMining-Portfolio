@@ -64,15 +64,15 @@ const footer = () => {
                     <div className='col-span-4 md:col-span-4 lg:col-span-4'>
                         <div className="flex gap-2">
                             <Image src={'/assets/footer/mask.svg'} alt="mask-icon" width={24} height={24} />
-                            <h5 className="text-base font-normal text-offwhite">123 Recycling Center Road, Faridabad, Haryana</h5>
+                            <h5 className="text-base font-normal text-offwhite">Khasra no. 103 Barhana Jhajjar</h5>
                         </div>
                         <div className="flex gap-2 mt-10">
                             <Image src={'/assets/footer/telephone.svg'} alt="telephone-icon" width={24} height={24} />
-                            <h5 className="text-base font-normal text-offwhite">+91 9999999999</h5>
+                            <h5 className="text-base font-normal text-offwhite">+91 89 89 89 89 93</h5>
                         </div>
                         <div className="flex gap-2 mt-10">
                             <Image src={'/assets/footer/email.svg'} alt="email-icon" width={24} height={24} />
-                            <h5 className="text-base font-normal text-offwhite">contact@blackmining.com</h5>
+                            <h5 className="text-base font-normal text-offwhite">Blackminingjunk@gmail.com</h5>
                         </div>
                     </div>
 

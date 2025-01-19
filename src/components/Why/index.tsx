@@ -26,17 +26,17 @@ const Why = () => {
     return (
         <div id="about">
 
-            <div className='mx-auto max-w-7xl px-4 my-20 sm:py-20 lg:px-8'>
+            <div className='mx-auto max-w-7xl px-4 my-16 -mt-16 sm:py-20 lg:px-8'>
                 <div className='grid grid-cols-1 lg:grid-cols-2'>
 
                     {/* COLUMN-1 */}
-                    <div className="lg:-ml-64 -mt-20">
+                    <div className="lg:-ml-64">
                         <Image
-                            src="/img5.jpeg"
+                            src="/carimg.jpg"
                             alt="iPad-image"
                             width={800}
-                            height={300}
-                            className="rounded-3xl"
+                            height={2000}
+                            className="rounded-3xl h-[300px] md:h-[500px] lg:h-[700px] object-cover"
                         />
                     </div>
 

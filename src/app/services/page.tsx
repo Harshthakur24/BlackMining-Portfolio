@@ -55,7 +55,13 @@ export default function ServicesPage() {
                         {/* COLUMN-2 */}
                         <div className='col-span-6 lg:col-span-5'>
                             <div className='gap-x-16 gap-y-10 lg:gap-x-40 px-10 py-12 bg-bluebg rounded-3xl'>
-                                <Image src={'/img5.jpeg'} alt={'marketing'} width={1500} height={1500} className="mb-5" />
+                                <Image
+                                    src={'/f9.jpg'}
+                                    alt={'marketing'}
+                                    width={1500}
+                                    height={3000}
+                                    className="mb-5 w-full h-[280px] md:h-[400px] object-cover rounded-xl"
+                                />
                             </div>
                         </div>
                         <div className='lg:col-span-1'></div>
