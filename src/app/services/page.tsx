@@ -7,7 +7,7 @@ import Link from "next/link"
 
 export default function ServicesPage() {
     return (
-        <main className="mb-40 md:mb-28 mt-6 banner-image">
+        <main className="mb-40 md:mb-28 mt-6">
             <div className="text-center">
                 <h1 className="text-4xl font-semibold text-navyblue sm:text-6xl lg:text-8xl md:4px lh-96">
                     Services we provide <br />
@@ -50,7 +50,7 @@ export default function ServicesPage() {
                     </div>
                 </div>
                 {/*  SERVICE-2 */}
-                <div className='mx-auto max-w-7xl px-4 my-10 sm:py-20 lg:px-8 banner-image'>
+                <div className='mx-auto max-w-7xl px-4 my-10 sm:py-20 lg:px-8'>
                     <div className='grid grid-cols-1 lg:grid-cols-12 gap-8'>
                         {/* COLUMN-2 */}
                         <div className='col-span-6 lg:col-span-5'>
@@ -105,7 +105,7 @@ export default function ServicesPage() {
                     </div>
                 </div>
                 {/*  SERVICE-4 */}
-                <div className='mx-auto max-w-7xl px-4 my-10 sm:py-20 lg:px-8 banner-image'>
+                <div className='mx-auto max-w-7xl px-4 my-10 sm:py-20 lg:px-8'>
                     <div className='grid grid-cols-1 lg:grid-cols-12 gap-8'>
                         {/* COLUMN-2 */}
                         <div className="col-span-6 lg:col-span-5">

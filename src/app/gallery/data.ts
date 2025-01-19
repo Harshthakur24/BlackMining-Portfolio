@@ -1,7 +1,7 @@
 export const galleryCards = [
   {
     title: "Project 1",
-    src: "/img4.jpg",
+    src: "/f6.jpg",
   },
   {
     title: "Project 2",

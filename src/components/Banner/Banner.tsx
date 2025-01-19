@@ -126,7 +126,7 @@ const Banner = () => {
             <BackgroundLines className="h-full relative min-h-screen bg-[#fafafa] container max-w-7xl mx-auto px-4 md:px-6 bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:4rem_4rem]">
                 {/* Hero Text Section - Added pt classes for spacing */}
                 <div className="text-center mb-6 md:mb-10 pt-8 md:pt-12">
-                    <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-7xl font-semibold text-navyblue mb-2 md:mb-3 leading-tight">
+                    <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-7xl 2xl:text-8xl font-semibold text-navyblue mb-2 md:mb-3 leading-tight">
                         Turn Your Car Into Value <br className="hidden md:block" /> with Black Mining.
                     </h1>
                     <p className="text-base sm:text-lg text-bluegray max-w-2xl mx-auto px-4">
@@ -145,7 +145,7 @@ const Banner = () => {
                     <Link href="/about">
                         <button
                             type="button"
-                            className="text-base whitespace-nowrap rounded-full text-blue font-medium py-3 px-8 md:py-5 md:px-12 sm:py-4 sm:px-8 border border-lightgrey inline-flex items-center justify-center transition duration-300 hover:text-white hover:bg-blue leafbutton"
+                            className="text-base whitespace-nowrap rounded-full text-blue font-medium py-3 px-8 md:py-5 md:px-12 sm:py-4 sm:px-8 border border-lightgrey inline-flex items-center justify-center transition duration-300 hover:text-white hover:bg-blue"
                         >
                             More info
                         </button>
@@ -237,7 +237,7 @@ const Banner = () => {
                                     <div className="relative group">
                                         <div className="relative overflow-hidden rounded-2xl">
                                             <Image
-                                                src={'/img6.jpeg'}
+                                                src={'/f1.jpg'}
                                                 alt="banner-image"
                                                 width={400}
                                                 height={200}
@@ -255,7 +255,7 @@ const Banner = () => {
                                         <div className="relative group flex-1">
                                             <div className="relative overflow-hidden rounded-2xl">
                                                 <Image
-                                                    src={'/img-main.jpeg'}
+                                                    src={'/f2.jpg'}
                                                     alt="banner-image"
                                                     width={200}
                                                     height={150}
@@ -270,7 +270,7 @@ const Banner = () => {
                                         <div className="relative group flex-1">
                                             <div className="relative overflow-hidden rounded-2xl">
                                                 <Image
-                                                    src={'/img5.jpeg'}
+                                                    src={'/img6.jpeg'}
                                                     alt="banner-image"
                                                     width={200}
                                                     height={150}
@@ -311,96 +311,96 @@ const Banner = () => {
                             {/* First set */}
                             <div className="flex gap-6 shrink-0">
                                 <Image
-                                    src={'/img6.jpeg'}
+                                    src={'/f1.jpg'}
                                     alt="banner-image"
                                     width={170}
-                                    height={100}
-                                    className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
+                                    height={300}
+                                    className="rounded-3xl w-auto h-[280px] max-w-[360px] object-cover shrink-0"
                                 />
                                 <Image
-                                    src={'/img-main.jpeg'}
+                                    src={'/f2.jpg'}
                                     alt="banner-image"
                                     width={170}
-                                    height={100}
-                                    className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
+                                    height={300}
+                                    className="rounded-3xl w-auto h-[280px] max-w-[360px] object-cover shrink-0"
                                 />
                                 <Image
-                                    src={'/img5.jpeg'}
+                                    src={'/f3.jpg'}
                                     alt="banner-image"
                                     width={170}
-                                    height={100}
-                                    className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
+                                    height={300}
+                                    className="rounded-3xl w-auto h-[280px] max-w-[360px] object-cover shrink-0"
                                 />
                                 <Image
-                                    src={'/img3.jpg'}
+                                    src={'/f4.jpg'}
                                     alt="banner-image"
                                     width={170}
-                                    height={100}
-                                    className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
+                                    height={300}
+                                    className="rounded-3xl w-auto h-[280px] max-w-[360px] object-cover shrink-0"
                                 />
                             </div>
 
                             {/* Second set */}
                             <div className="flex gap-6 shrink-0">
                                 <Image
-                                    src={'/img6.jpeg'}
+                                    src={'/f5.jpg'}
                                     alt="banner-image"
                                     width={170}
-                                    height={100}
-                                    className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
+                                    height={300}
+                                    className="rounded-3xl w-auto h-[280px] max-w-[360px] object-cover shrink-0"
                                 />
                                 <Image
-                                    src={'/img-main.jpeg'}
+                                    src={'/f6.jpg'}
                                     alt="banner-image"
                                     width={170}
-                                    height={100}
-                                    className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
+                                    height={300}
+                                    className="rounded-3xl w-auto h-[280px] max-w-[360px] object-cover shrink-0"
                                 />
                                 <Image
-                                    src={'/img5.jpeg'}
+                                    src={'/f7.jpg'}
                                     alt="banner-image"
                                     width={170}
-                                    height={100}
-                                    className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
+                                    height={300}
+                                    className="rounded-3xl w-auto h-[280px] max-w-[360px] object-cover shrink-0"
                                 />
                                 <Image
-                                    src={'/img3.jpg'}
+                                    src={'/g1.jpg'}
                                     alt="banner-image"
                                     width={170}
-                                    height={100}
-                                    className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
+                                    height={300}
+                                    className="rounded-3xl w-auto h-[280px] max-w-[360px] object-cover shrink-0"
                                 />
                             </div>
 
                             {/* Third set for extra smoothness */}
                             <div className="flex gap-6 shrink-0">
                                 <Image
-                                    src={'/img6.jpeg'}
+                                    src={'/g2.jpg'}
                                     alt="banner-image"
                                     width={170}
-                                    height={100}
-                                    className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
+                                    height={300}
+                                    className="rounded-3xl w-auto h-[280px] max-w-[360px] object-cover shrink-0"
                                 />
                                 <Image
-                                    src={'/img-main.jpeg'}
+                                    src={'/g3.jpg'}
                                     alt="banner-image"
                                     width={170}
-                                    height={100}
-                                    className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
+                                    height={300}
+                                    className="rounded-3xl w-auto h-[280px] max-w-[360px] object-cover shrink-0"
                                 />
                                 <Image
-                                    src={'/img5.jpeg'}
+                                    src={'/g4.jpg'}
                                     alt="banner-image"
                                     width={170}
-                                    height={100}
-                                    className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
+                                    height={300}
+                                    className="rounded-3xl w-auto h-[280px] max-w-[360px] object-cover shrink-0"
                                 />
                                 <Image
-                                    src={'/img3.jpg'}
+                                    src={'/f1.jpg'}
                                     alt="banner-image"
                                     width={170}
-                                    height={100}
-                                    className="rounded-3xl w-auto max-w-[360px] object-cover shrink-0"
+                                    height={300}
+                                    className="rounded-3xl w-auto h-[280px] max-w-[360px] object-cover shrink-0"
                                 />
                             </div>
                         </div>

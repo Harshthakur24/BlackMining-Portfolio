@@ -3,7 +3,7 @@ import { ContainerScroll } from "@/src/components/ui/container-scroll-animation"
 
 export default function AboutPage() {
     return (
-        <main className="min-h-screen pt-2 bg-[#fafafa] banner-image w-full">
+        <main className="min-h-screen pt-2 bg-[#fafafa] w-full">
             <h1 className="flex justify-center mt-16 text-5xl md:text-8xl text-black font-bold bg-clip-text">
                 About Us
             </h1>

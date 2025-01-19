@@ -22,7 +22,7 @@ const Register = () => {
                 <div className='hidden lg:block'>
                     <a
                         href="#contact2"
-                        className="text-blue text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out leafbutton bg-lightblue hover:text-white hover:bg-blue"
+                        className="text-blue text-lg font-medium ml-9 py-5 px-16 transition duration-150 ease-in-out rounded-full bg-lightblue hover:text-white hover:bg-blue"
                         onClick={(e) => {
                             e.preventDefault();
                             const element = document.querySelector('#contact2');

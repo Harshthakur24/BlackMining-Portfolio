@@ -99,8 +99,8 @@ const Navbar = () => {
         <>
             {/* Top Bar - Add className for reference */}
             <div className="top-bar bg-black text-white py-1.5 sm:py-2">
-                <div className="w-full px-2 lg:px-8">
-                    <div className="flex justify-center items-center gap-4 md:space-x-36">
+                <div className="w-full">
+                    <div className="w-full flex justify-center items-center gap-4 md:space-x-64">
                         {isDesktop && (
                             <span className="text-xs sm:text-sm whitespace-nowrap">
                                 <i className="fas fa-mining mr-2"></i>Black Mining
@@ -128,7 +128,7 @@ const Navbar = () => {
 
                                 {/* LOGO */}
 
-                                <div className="flex flex-shrink-0 items-center">
+                                <div className="flex w-20 h-30 flex-shrink-0 items-center">
                                     <Image
                                         className="block h-16 w-40 lg:hidden"
                                         src={'/logo.png'}
