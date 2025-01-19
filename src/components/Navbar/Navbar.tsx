@@ -100,7 +100,7 @@ const Navbar = () => {
             {/* Top Bar - Add className for reference */}
             <div className="top-bar bg-black text-white py-1.5 sm:py-2">
                 <div className="w-full">
-                    <div className="w-full flex justify-center items-center gap-16 md:space-x-64">
+                    <div className="w-full flex justify-center items-center gap-14 md:space-x-64">
 
                         <span className="text-xs sm:text-sm whitespace-nowrap">
                             <i className="fas fa-phone mr-2"></i>+91 89 89 89 89 93

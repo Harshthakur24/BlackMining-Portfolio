@@ -26,7 +26,7 @@ const Why = () => {
     return (
         <div id="about">
 
-            <div className='mx-auto max-w-7xl px-4 my-16 -mt-16 sm:py-20 lg:px-8'>
+            <div className='mx-auto max-w-7xl px-4 my-16 mt-20 md:-mt-16 sm:py-20 lg:px-8'>
                 <div className='grid grid-cols-1 lg:grid-cols-2'>
 
                     {/* COLUMN-1 */}
