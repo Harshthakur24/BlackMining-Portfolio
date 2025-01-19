@@ -38,7 +38,7 @@ export const testimonials = [
         "Advanced recycling equipment and efficient processing systems make this one of our most productive facilities.",
       name: "Busan Recycling Hub",
       designation: "Specialized Marine Vehicle Processing Center",
-      src: "/img3.jpg",
+      src: "/f3.jpg",
     },
     {
       quote:
@@ -59,6 +59,6 @@ export const testimonials = [
         "Innovative recycling processes and high material recovery rates make this facility a benchmark in sustainability.",
       name: "Gwangju Eco Center",
       designation: "Sustainable Processing Hub",
-      src: "/img4.jpg",
+      src: "/f2.jpg",
     },
   ];
