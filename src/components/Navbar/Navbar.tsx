@@ -2,7 +2,7 @@
 import { Disclosure } from '@headlessui/react';
 import { Bars3Icon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import Image from 'next/image';
@@ -27,7 +27,20 @@ function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
 }
 
+
+
 const Navbar = () => {
+    const [isDesktop, setIsDesktop] = useState(true);
+    useEffect(() => {
+        setIsDesktop(window.innerWidth >= 768);
+
+        const handleResize = () => {
+            setIsDesktop(window.innerWidth >= 768);
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
     const [isOpen, setIsOpen] = React.useState(false);
     const [prevScrollPos, setPrevScrollPos] = React.useState(0);
     const [visible, setVisible] = React.useState(true);
@@ -86,11 +99,13 @@ const Navbar = () => {
         <>
             {/* Top Bar - Add className for reference */}
             <div className="top-bar bg-black text-white py-1.5 sm:py-2">
-                <div className="w-full px-4 lg:px-8">
-                    <div className="flex justify-center items-center md:space-x-36">
-                        <span className="text-xs sm:text-sm whitespace-nowrap">
-                            <i className="fas fa-mining mr-2"></i>Black Mining
-                        </span>
+                <div className="w-full px-2 lg:px-8">
+                    <div className="flex justify-center items-center gap-4 md:space-x-36">
+                        {isDesktop && (
+                            <span className="text-xs sm:text-sm whitespace-nowrap">
+                                <i className="fas fa-mining mr-2"></i>Black Mining
+                            </span>
+                        )}
                         <span className="text-xs sm:text-sm whitespace-nowrap">
                             <i className="fas fa-phone mr-2"></i>+91 8989898993
                         </span>

@@ -13,7 +13,7 @@ export default function AboutPage() {
                 }
             >
                 <div className="p-4 md:p-16 bg-[#fafafa] rounded-2xl w-full max-w-full mx-auto">
-                    <div className="h-[60vh] overflow-y-auto pr-2 md:pr-4 space-y-8 
+                    <div className="h-[85vh] overflow-y-auto pr-2 md:pr-4 space-y-8 
                         scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100 
                         hover:scrollbar-thumb-gray-500 
                         scroll-smooth">
