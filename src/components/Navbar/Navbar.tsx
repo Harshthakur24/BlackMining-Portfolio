@@ -101,14 +101,15 @@ const Navbar = () => {
             <div className="top-bar bg-black text-white py-1.5 sm:py-2">
                 <div className="w-full">
                     <div className="w-full flex justify-center items-center gap-4 md:space-x-64">
+
+                        <span className="text-xs sm:text-sm whitespace-nowrap">
+                            <i className="fas fa-phone mr-2"></i>+91 8989898993
+                        </span>
                         {isDesktop && (
                             <span className="text-xs sm:text-sm whitespace-nowrap">
                                 <i className="fas fa-mining mr-2"></i>Black Mining
                             </span>
                         )}
-                        <span className="text-xs sm:text-sm whitespace-nowrap">
-                            <i className="fas fa-phone mr-2"></i>+91 8989898993
-                        </span>
                         <span className="text-xs sm:text-sm whitespace-nowrap">
                             <i className="fas fa-envelope mr-2"></i>blackminingjunk@gmail.com
                         </span>
