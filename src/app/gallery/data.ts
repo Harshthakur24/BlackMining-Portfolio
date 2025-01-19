@@ -9,7 +9,7 @@ export const galleryCards = [
   },
   {
     title: "Project 3",
-    src: "/img3.jpg",
+    src: "/f5.jpg",
   },
   {
     title: "Project 4",
