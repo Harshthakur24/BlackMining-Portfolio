@@ -21,11 +21,11 @@ export default function AboutPage() {
                             We are pioneers in sustainable vehicle disposal, committed to transforming end-of-life vehicles into valuable resources while protecting our environment.
                         </p>
 
-                        <p className="text-lg md:text-2xl leading-relaxed text-white/80">
+                        <p className="text-lg md:text-2xl leading-relaxed text-white">
                             With over two decades of experience, our team has processed more than 10,000 vehicles, maintaining a remarkable 95% recovery rate.
                         </p>
 
-                        <p className="text-lg md:text-2xl leading-relaxed text-white/80">
+                        <p className="text-lg md:text-2xl leading-relaxed text-white">
                             Our state-of-the-art facilities and expert team work together to provide comprehensive solutions that benefit both our clients and the environment. We believe in transparency, sustainability, and excellence in everything we do.
                         </p>
                     </div>

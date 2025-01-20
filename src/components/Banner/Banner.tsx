@@ -119,14 +119,8 @@ const Banner = () => {
             />
 
             <div
-                className="relative min-h-screen overflow-hidden bg-gradient-to-b from-gray-900 to-gray-950 w-screen text-white"
-                style={{
-                    backgroundImage: 'url("/curl.svg")',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'center',
-                    backgroundSize: 'cover',
-                    backgroundColor: '#030712'
-                }}
+                className="relative min-h-screen overflow-hidden bg-black w-screen text-white"
+
             >
                 {/* Dark Overlay for better contrast */}
                 <div className="absolute inset-0 bg-gray-950/50"></div>
@@ -138,10 +132,16 @@ const Banner = () => {
                 </div>
 
                 {/* Subtle Grid Overlay - Lighter lines for visibility */}
-                <div className="absolute inset-0 bg-[linear-gradient(to_right,#374151_1px,transparent_1px),linear-gradient(to_bottom,#374151_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20"></div>
+                <div className="absolute inset-0 bg-[size:4rem_4rem] opacity-20"></div>
 
                 {/* Main Content Container with text color adjustments */}
-                <div className="relative container max-w-7xl mx-auto px-4 md:px-6 z-10">
+                <div className="relative container max-w-7xl mx-auto px-4 md:px-6 z-10 bg-black" style={{
+                    backgroundImage: 'url("/curl.svg")',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                    backgroundSize: 'cover',
+                    backgroundColor: 'black'
+                }}>
                     <div className="text-white">
                         {/* Hero Text Section - Added pt classes for spacing */}
                         <div className="text-center mb-6 md:mb-10 pt-8 md:pt-12">
@@ -185,7 +185,7 @@ const Banner = () => {
                                             onChange={handleChange}
                                             type="text"
                                             placeholder="Your Name"
-                                            className="h-14 w-full px-5 border-2 border-gray-700 rounded-2xl focus:outline-none focus:border-blue-500/40 focus:ring-2 focus:ring-blue-500/20 bg-gray-800/80 text-white transition-all duration-300 placeholder:text-gray-500 placeholder:scale-95"
+                                            className="h-14 w-full px-5 border-2 border-gray-700 rounded-2xl focus:outline-none focus:border-blue-500/40 focus:ring-2 focus:ring-blue-500/20 bg-gray-800/80 text-black transition-all duration-300 placeholder:text-gray-500 placeholder:scale-95"
                                         />
                                     </div>
                                     <div className="relative group">
@@ -198,7 +198,7 @@ const Banner = () => {
                                             onChange={handleChange}
                                             type="tel"
                                             placeholder="Your Number"
-                                            className="h-14 w-full px-5 border-2 border-gray-700 rounded-2xl focus:outline-none focus:border-blue-500/40 focus:ring-2 focus:ring-blue-500/20 bg-gray-800/80 text-white transition-all duration-300 placeholder:text-gray-500 placeholder:scale-95"
+                                            className="h-14 w-full px-5 border-2 border-gray-700 rounded-2xl focus:outline-none focus:border-blue-500/40 focus:ring-2 focus:ring-blue-500/20 bg-gray-800/80 text-black transition-all duration-300 placeholder:text-gray-500 placeholder:scale-95"
                                         />
                                     </div>
                                     <div className="relative group">
@@ -211,7 +211,7 @@ const Banner = () => {
                                             onChange={handleChange}
                                             type="email"
                                             placeholder="Your Email"
-                                            className="h-14 w-full px-5 border-2 border-gray-700 rounded-2xl focus:outline-none focus:border-blue-500/40 focus:ring-2 focus:ring-blue-500/20 bg-gray-800/80 text-white transition-all duration-300 placeholder:text-gray-500 placeholder:scale-95"
+                                            className="h-14 w-full px-5 border-2 border-gray-700 rounded-2xl focus:outline-none focus:border-blue-500/40 focus:ring-2 focus:ring-blue-500/20 bg-gray-800/80 text-black transition-all duration-300 placeholder:text-gray-500 placeholder:scale-95"
                                         />
                                     </div>
                                     <div className="relative group">
@@ -224,7 +224,7 @@ const Banner = () => {
                                             onChange={handleChange}
                                             type="text"
                                             placeholder="Vehicle Name"
-                                            className="h-14 w-full px-5 border-2 border-gray-700 rounded-2xl focus:outline-none focus:border-blue-500/40 focus:ring-2 focus:ring-blue-500/20 bg-gray-800/80 text-white transition-all duration-300 placeholder:text-gray-500 placeholder:scale-95"
+                                            className="h-14 w-full px-5 border-2 border-gray-700 rounded-2xl focus:outline-none focus:border-blue-500/40 focus:ring-2 focus:ring-blue-500/20 bg-gray-800/80 text-black transition-all duration-300 placeholder:text-gray-500 placeholder:scale-95"
                                         />
                                     </div>
                                     <div className="relative group">
@@ -237,7 +237,7 @@ const Banner = () => {
                                             onChange={handleChange}
                                             type="text"
                                             placeholder="Your message"
-                                            className="h-14 w-full px-5 border-2 border-gray-700 rounded-2xl focus:outline-none focus:border-blue-500/40 focus:ring-2 focus:ring-blue-500/20 bg-gray-800/80 text-white transition-all duration-300 placeholder:text-gray-500 placeholder:scale-95"
+                                            className="h-14 w-full px-5 border-2 border-gray-700 rounded-2xl focus:outline-none focus:border-blue-500/40 focus:ring-2 focus:ring-blue-500/20 bg-gray-800/80 text-black transition-all duration-300 placeholder:text-gray-500 placeholder:scale-95"
                                         />
                                     </div>
                                     <button

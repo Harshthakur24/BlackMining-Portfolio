@@ -22,6 +22,15 @@ const navigation: NavigationItem[] = [
     { name: 'About', href: '/about', current: false },
     { name: 'FAQs', href: '/faqs', current: false },
 ]
+const navigationMobile: NavigationItem[] = [
+    { name: 'Home', href: '/', current: false },
+    { name: 'About', href: '/about', current: false },
+    { name: 'Services', href: '/services', current: false },
+    { name: 'Gallery', href: '/gallery', current: false },
+    { name: 'FAQs', href: '/faqs', current: false },
+    { name: 'Contact Us', href: '/', current: false },
+]
+
 
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(' ')
@@ -192,17 +201,17 @@ const Navbar = () => {
 
             {/* Drawer remains the same */}
             <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
-                <div className="space-y-1">
-                    {navigation.map((item) => (
+                <div className="h-full w-full bg-black p-0 m-0">
+                    {navigationMobile.map((item) => (
                         <Link
                             key={item.name}
                             href={item.href}
-                            className="flex items-center justify-between px-3 py-4 text-base font-medium text-gray-900 hover:bg-gray-50 rounded-lg group transition-colors duration-200"
+                            className="flex items-center m-0 justify-between px-4 py-4 text-base font-medium text-white hover:bg-white/10 transition-all duration-200"
                             onClick={() => setIsOpen(false)}
                         >
                             <span>{item.name}</span>
                             <svg
-                                className="w-5 h-5 text-gray-400 group-hover:text-gray-900 transition-colors duration-200"
+                                className="w-5 h-5 text-white"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"

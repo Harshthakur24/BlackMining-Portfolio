@@ -43,6 +43,7 @@ const Data = () => {
 
             <button
               onClick={() => {
+
                 const element = document.querySelector('#contact2');
                 if (element) {
                   const navHeight = document.querySelector('nav')?.getBoundingClientRect().height || 0;
