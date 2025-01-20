@@ -9,10 +9,10 @@ export default function ServicesPage() {
     return (
         <main className="mb-40 md:mb-28 mt-6">
             <div className="text-center">
-                <h1 className="text-4xl font-semibold text-navyblue sm:text-6xl lg:text-8xl md:4px lh-96">
+                <h1 className="text-4xl font-semibold text-white sm:text-6xl lg:text-8xl md:4px lh-96">
                     Services we provide <br />
                 </h1>
-                <p className="mt-4 text-sm sm:text-md lg:text-lg leading-8 text-bluegray">
+                <p className="mt-4 text-sm sm:text-md lg:text-lg leading-8 text-white/80">
                     We provide a variety of services to our clients.
                 </p>
             </div>
@@ -24,8 +24,8 @@ export default function ServicesPage() {
                         {/* COLUMN-1 */}
                         <div className='col-span-6 flex justify-center'>
                             <div className="flex flex-col align-middle justify-center p-10">
-                                <p className="text-3xl md:text-4xl lg:text-6xl pt-4 font-semibold lh-81 mt-5 text-center lg:text-start">1. Certificate for Discount on New Vehicle Purchase</p>
-                                <h4 className="text-lg pt-4 font-normal lh-33 text-center lg:text-start text-bluegray">
+                                <p className="text-3xl md:text-4xl lg:text-6xl pt-4 font-semibold lh-81 mt-5 text-center lg:text-start text-white">1. Certificate for Discount on New Vehicle Purchase</p>
+                                <h4 className="text-lg pt-4 font-normal lh-33 text-center lg:text-start text-white/80">
                                     Upon scrapping your old vehicle at a Registered Vehicle Scrapping Facility (RVSF), you receive a &apos;Certificate of Deposit&apos;. This certificate entitles you to incentives when purchasing a new vehicle, such as discounts or tax rebates, as outlined in various state policies.
                                 </h4>
                                 <Link href={'/'} className="mt-4 text-xl font-medium text-blue flex gap-2 mx-auto lg:mx-0 space-links">Our Process <Image src={'/assets/provide/arrow.svg'} alt={'arrow'} width={20} height={20} /></Link>
@@ -68,8 +68,8 @@ export default function ServicesPage() {
                         {/* COLUMN-1 */}
                         <div className='col-span-6 flex justify-center'>
                             <div className="flex flex-col align-middle justify-center p-10">
-                                <p className="text-3xl md:text-4xl lg:text-6xl pt-4 font-semibold lh-81 mt-5 text-center lg:text-start">2. Convenient Home Pickup Service</p>
-                                <h4 className="text-lg pt-4 font-normal lh-33 text-center lg:text-start text-bluegray">
+                                <p className="text-3xl md:text-4xl lg:text-6xl pt-4 font-semibold lh-81 mt-5 text-center lg:text-start text-white">2. Convenient Home Pickup Service</p>
+                                <h4 className="text-lg pt-4 font-normal lh-33 text-center lg:text-start text-white/80">
                                     Many RVSFs provide free doorstep pickup services for vehicles designated for scrapping. This ensures a hassle-free experience, as professionals handle the transportation of your vehicle from your residence to the scrapping facility.
                                 </h4>
                                 <Link href={'/'} className="mt-4 text-xl font-medium text-blue flex gap-2 mx-auto lg:mx-0 space-links">Our Process <Image src={'/assets/provide/arrow.svg'} alt={'arrow'} width={20} height={20} /></Link>
@@ -85,8 +85,8 @@ export default function ServicesPage() {
                         {/* COLUMN-1 */}
                         <div className='col-span-6 flex justify-center'>
                             <div className="flex flex-col align-middle justify-center p-10">
-                                <p className="text-3xl md:text-4xl lg:text-6xl pt-4 font-semibold lh-81 mt-5 text-center lg:text-start">3. Environmental and Economic Advantages</p>
-                                <h4 className="text-lg pt-4 font-normal lh-33 text-center lg:text-start text-bluegray">
+                                <p className="text-3xl md:text-4xl lg:text-6xl pt-4 font-semibold lh-81 mt-5 text-center lg:text-start text-white">3. Environmental and Economic Advantages</p>
+                                <h4 className="text-lg pt-4 font-normal lh-33 text-center lg:text-start text-white/80">
                                     The Government of India&apos;s Vehicle Scrappage Policy aims to phase out unfit and polluting vehicles, thereby reducing environmental pollution and promoting road safety. Additionally, the policy is designed to boost the automotive industry by increasing vehicle sales, which can lead to economic growth and job creation.
                                 </h4>
                                 <Link href={'/'} className="mt-4 text-xl font-medium text-blue flex gap-2 mx-auto lg:mx-0 space-links">Our Process <Image src={'/assets/provide/arrow.svg'} alt={'arrow'} width={20} height={20} /></Link>

@@ -32,7 +32,10 @@ module.exports = {
       'midnightblue' : '#183B56',
       'midblue' : '#00276F',
       'bluebg' : "rgba(47, 184, 227, 0.2)",
-      'border' : "rgba(128, 135, 137, 0.35)"
+      'border' : "rgba(128, 135, 137, 0.35)",
+      gray: {
+        950: '#030712',
+      }
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
@@ -51,7 +54,22 @@ module.exports = {
       '65xl': ['65px', { lineHeight: '1' }],
       '80xl': ['80px', { lineHeight: '6rem' }],
     },
-    extend: {},
+    extend: {
+      animation: {
+        'float': 'float 15s ease-in-out infinite',
+        'float-delayed': 'float-delayed 18s ease-in-out infinite',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0) scale(1)' },
+          '50%': { transform: 'translateY(-20px) scale(1.05)' },
+        },
+        'float-delayed': {
+          '0%, 100%': { transform: 'translateY(0) scale(1)' },
+          '50%': { transform: 'translateY(20px) scale(1.05)' },
+        },
+      },
+    },
   },
   plugins: [
     require('tailwind-scrollbar'),

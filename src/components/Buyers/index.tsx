@@ -37,16 +37,16 @@ const cardData: cardDataType[] = [
 
 const Buyers = () => {
     return (
-        <div className='hidden md:block mx-auto max-w-7xl py-8 pt-60 px-6'>
-            <div className='grid sm:grid-cols-2 lg:grid-cols-4 gap-y-20 gap-x-5'>
+        <div className='hidden md:block mx-auto max-w-7xl py-8 pt-12 px-6 bg-black text-white'>
+            <div className='grid sm:grid-cols-2 lg:grid-cols-4 gap-y-20 gap-x-5 bg-gradient-to-b from-gray-900 to-gray-950'>
                 {cardData.map((items, i) => (
                     <div className='flex flex-col justify-center items-center' key={i}>
                         <div className='flex justify-center border border-border p-2 w-10 rounded-lg'>
                             <Image src={items.imgSrc} alt={items.imgSrc} width={30} height={30} />
                         </div>
-                        <h2 className='text-4xl lg:text-6xl text-black font-semibold text-center mt-5'>{items.percent}</h2>
-                        <h3 className='text-2xl text-black font-semibold text-center lg:mt-6'>{items.heading}</h3>
-                        <p className='text-lg font-normal text-black text-center text-opacity-50 mt-2'>{items.subheading}</p>
+                        <h2 className='text-4xl lg:text-6xl text-white font-semibold text-center mt-5'>{items.percent}</h2>
+                        <h3 className='text-2xl text-white font-semibold text-center lg:mt-6'>{items.heading}</h3>
+                        <p className='text-lg font-normal text-white text-center text-opacity-50 mt-2'>{items.subheading}</p>
                     </div>
                 ))}
             </div>

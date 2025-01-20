@@ -51,14 +51,14 @@ function FaqItem({ question, answer, isOpen, onClick }: {
     return (
         <motion.div
             initial={false}
-            className="border-b border-gray-200 last:border-b-0"
+            className="border-b border-white last:border-b-0"
             whileHover={{ backgroundColor: 'rgba(0, 0, 0, 0.01)' }}
         >
             <button
                 onClick={onClick}
-                className="flex justify-between items-center w-full py-6 text-left group transition-colors duration-200"
+                className="flex justify-between items-center w-full text-white py-6 text-left group transition-colors duration-200"
             >
-                <span className="text-xl font-medium text-gray-800 group-hover:text-blue-600 transition-colors duration-200">
+                <span className="text-xl font-medium text-white group-hover:text-blue-600 transition-colors duration-200">
                     {question}
                 </span>
                 <motion.div
@@ -91,7 +91,7 @@ function FaqItem({ question, answer, isOpen, onClick }: {
                 }}
                 className="overflow-hidden"
             >
-                <p className="pb-6 text-gray-600 text-lg leading-relaxed pr-8">
+                <p className="pb-6 text-white/80 text-lg leading-relaxed pr-8">
                     {answer}
                 </p>
             </motion.div>
@@ -103,7 +103,7 @@ export default function FaqsPage() {
     const [openIndex, setOpenIndex] = useState<number | null>(null)
 
     return (
-        <main className="min-h-screen py-16 px-4 bg-gradient-to-b from-gray-50 to-white mb-56 mt-2">
+        <main className="min-h-screen py-16 px-4 bg-black mb-56 mt-2">
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -112,7 +112,7 @@ export default function FaqsPage() {
             >
                 <div className="text-center mb-4">
                     <motion.h1
-                        className="text-4xl md:text-5xl font-bold text-gray-900 mb-4"
+                        className="text-4xl md:text-5xl font-bold text-white mb-4"
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.2 }}
@@ -120,7 +120,7 @@ export default function FaqsPage() {
                         Frequently Asked Questions
                     </motion.h1>
                     <motion.p
-                        className="text-md md:text-xl text-gray-600"
+                        className="text-md md:text-xl text-white/80"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.3 }}
@@ -130,7 +130,7 @@ export default function FaqsPage() {
                 </div>
 
                 <motion.div
-                    className="bg-white rounded-2xl shadow-xl p-8 divide-y divide-gray-100"
+                    className="bg-black rounded-2xl shadow-xl p-8 divide-y divide-gray-100"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.4 }}

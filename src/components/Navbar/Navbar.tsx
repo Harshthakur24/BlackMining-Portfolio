@@ -120,7 +120,7 @@ const Navbar = () => {
 
 
             {/* Main Navbar - Add nav tag for reference */}
-            <div className={`w-full bg-white shadow-sm transition-transform duration-300 sticky top-0 z-50
+            <div className={`w-full bg-black text-white hover:text-white shadow-sm transition-transform duration-300 sticky top-0 z-50
                 ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
                 <Disclosure as="nav">
                     <div className="mx-auto max-w-7xl px-6 lg:py-3 lg:px-8">
@@ -155,7 +155,7 @@ const Navbar = () => {
                                                 key={item.name}
                                                 href={item.href}
                                                 className={classNames(
-                                                    item.current ? ' text-black hover:opacity-100' : 'hover:text-black hover:opacity-100',
+                                                    item.current ? ' text-white hover:opacity-100' : 'hover:text-white hover:opacity-100',
                                                     'px-3 py-4 text-lg font-normal opacity-75 space-links'
                                                 )}
                                                 aria-current={item.href ? 'page' : undefined}

@@ -40,6 +40,19 @@ html:not([data-scroll="0"]) .navbar {
     z-index: 3;
 }
 
+@keyframes gradient {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#sssquiggly-grad {
+    animation: gradient 15s linear infinite;
+} 
+
 
 
 .leafbutton {

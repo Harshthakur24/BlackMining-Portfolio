@@ -24,9 +24,9 @@ const whydata: whydata[] = [
 
 const Why = () => {
     return (
-        <div id="about">
+        <div id="about" className="bg-black text-white pt-16">
 
-            <div className='mx-auto max-w-7xl px-4 my-16 mt-20 md:-mt-16 sm:py-20 lg:px-8'>
+            <div className='mx-auto max-w-7xl px-4 md:-mt-16 sm:py-20 lg:px-8'>
                 <div className='grid grid-cols-1 lg:grid-cols-2'>
 
                     {/* COLUMN-1 */}
@@ -43,7 +43,7 @@ const Why = () => {
                     {/* COLUMN-2 */}
                     <div>
                         <h3 className="text-4xl lg:text-5xl pt-4 font-semibold sm:leading-tight mt-5 text-center lg:text-start">Why we best?</h3>
-                        <h4 className="text-lg pt-4 font-normal sm:leading-tight text-center text-beach lg:text-start">Dont waste time on search manual tasks. Let Automation do it for you. Simplify workflows, reduce errors, and save time.</h4>
+                        <h4 className="text-lg pt-4 font-normal sm:leading-tight text-center text-white/80 lg:text-start">Dont waste time on search manual tasks. Let Automation do it for you. Simplify workflows, reduce errors, and save time.</h4>
 
                         <div className="mt-10">
                             {whydata.map((items, i) => (
@@ -53,7 +53,7 @@ const Why = () => {
                                     </div>
                                     <div className="ml-5">
                                         <h4 className="text-2xl font-semibold">{items.heading}</h4>
-                                        <h5 className="text-lg text-beach font-normal mt-2">{items.subheading}</h5>
+                                        <h5 className="text-lg text-white/80 font-normal mt-2">{items.subheading}</h5>
                                     </div>
                                 </div>
                             ))}

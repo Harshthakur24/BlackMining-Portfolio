@@ -25,7 +25,7 @@ const testimonials = [
 
 const Clientsay = () => {
     return (
-        <div className="py-4 mb-48 bg-gradient-to-b from-gray-50 to-white">
+        <div className="py-16 mb-24 pb-24 bg-black text-white">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -39,14 +39,14 @@ const Clientsay = () => {
                     </p>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 bg-black text-white">
                     {testimonials.map((testimonial, index) => (
                         <motion.div
                             key={index}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.6, delay: index * 0.2 }}
-                            className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+                            className="bg-navyblue text-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-shadow duration-300"
                         >
                             <div className="flex items-center mb-6">
                                 <div className="relative w-16 h-16 mr-4">
