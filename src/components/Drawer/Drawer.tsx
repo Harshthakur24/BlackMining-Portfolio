@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface DrawerProps {
     children: React.ReactNode;
     isOpen: boolean;
@@ -19,11 +21,21 @@ const Drawer = ({ children, isOpen, setIsOpen }: DrawerProps) => {
 
             {/* Drawer panel - removed all padding and margins */}
             <div className="w-full absolute top-0 left-0 max-w-sm h-full bg-black shadow-lg p-0 m-0">
-                {/* Close button section */}
-                <div className="flex justify-end border-b border-white/20 bg-black">
+                {/* Logo and close button section */}
+                <div className="flex items-center justify-between border-b border-white/20 bg-black p-4">
+                    <div className="w-24">
+                        <Image
+                            src="/assets/logo-main.png"
+                            alt="Black Mining Logo"
+                            width={96}
+                            height={48}
+                            className="w-full h-auto"
+                            priority
+                        />
+                    </div>
                     <button
                         onClick={() => setIsOpen(false)}
-                        className="rounded-lg text-white hover:bg-white/10 transition-colors"
+                        className="rounded-lg text-white p-2"
                     >
                         <span className="sr-only">Close menu</span>
                         <svg
