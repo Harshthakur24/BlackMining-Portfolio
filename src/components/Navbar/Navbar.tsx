@@ -27,8 +27,9 @@ const navigationMobile: NavigationItem[] = [
     { name: 'About', href: '/about', current: false },
     { name: 'Services', href: '/services', current: false },
     { name: 'Gallery', href: '/gallery', current: false },
-    { name: 'FAQs', href: '/faqs', current: false },
     { name: 'Contact Us', href: '/', current: false },
+    { name: 'FAQs', href: '/faqs', current: false }
+
 ]
 
 
