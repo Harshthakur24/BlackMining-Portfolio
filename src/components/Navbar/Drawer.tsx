@@ -44,7 +44,7 @@ export default function Drawer({ children, isOpen, setIsOpen }: DrawerProps) {
                                         <div className="px-6 pt-6 pb-4 border-b bg-black border-gray-100">
                                             <div className="flex items-center justify-between">
                                                 <Image
-                                                    src="/logo.png"
+                                                    src="/logo-main.png"
                                                     alt="Logo"
                                                     width={120}
                                                     height={40}
