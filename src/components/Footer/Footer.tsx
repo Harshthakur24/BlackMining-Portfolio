@@ -28,9 +28,9 @@ const footer = () => {
                     {/* COLUMN-1 */}
 
                     <div className='col-span-4 md:col-span-12 lg:col-span-4'>
-                        <div className="flex gap-6">
+                        <div className="flex gap-2">
                             <Image src={'/logo-main.png'} width={50} height={50} alt="logo" className='pb-8 -mt-1' />
-                            <h1 className="text-2xl font-bold text-white">Black Mining</h1>
+                            <h1 className="text-xl font-bold text-white">Black Mining Junkyard LLP</h1>
                         </div>
                         <div className='flex gap-4'>
                             <Link href="https://facebook.com" className='footer-fb-icons'>
@@ -39,7 +39,7 @@ const footer = () => {
                             <Link href="https://twitter.com" className='footer-icons'>
                                 <Image src={'/assets/footer/twitter.svg'} alt="twitter" width={20} height={20} />
                             </Link>
-                            <Link href="https://instagram.com" className='footer-icons'>
+                            <Link href="https://www.instagram.com/black.mining.junkyard.llp?utm_source=qr&igsh=aTVsYzNxM3cyamt6" className='footer-icons' target="_blank" rel="noopener noreferrer">
                                 <Image src={'/assets/footer/instagram.svg'} alt="instagram" width={20} height={20} />
                             </Link>
                         </div>
@@ -81,7 +81,7 @@ const footer = () => {
                 {/* All Rights Reserved */}
 
                 <div className='py-10 lg:flex items-center justify-between border-t border-t-bordertop'>
-                    <h4 className='text-offwhite text-sm text-center lg:text-start font-normal'>@2024 Black Mining. All Rights Reserved</h4>
+                    <h4 className='text-offwhite text-sm text-center lg:text-start font-normal'>@2025 Black Mining Junkyard LLP. All Rights Reserved</h4>
                     <div className="flex gap-5 mt-5 lg:mt-0 justify-center lg:justify-start">
                         <h4 className='text-offwhite text-sm font-normal'><Link href="/" target="_blank">Privacy Policy</Link></h4>
                         <div className="h-5 bg-bordertop w-0.5"></div>
