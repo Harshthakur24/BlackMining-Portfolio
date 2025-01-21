@@ -135,29 +135,43 @@ const Navbar = () => {
                 <Disclosure as="nav">
                     <div className="mx-auto max-w-7xl px-6 lg:py-3 lg:px-8">
                         <div className="relative flex h-16 items-center justify-between">
-                            <div className="flex flex-1 items-center sm:items-stretch sm:justify-start">
-
-                                {/* LOGO */}
-
-                                <div className="flex w-20 h-30 flex-shrink-0 items-center">
+                            <div className="flex flex-1 items-center gap-0 md:gap-3 sm:items-stretch sm:justify-start">
+                                {/* MAIN LOGO */}
+                                <div className="flex w-24 h-16 flex-shrink-0 items-center">
                                     <Image
-                                        className="block h-16 w-40 lg:hidden"
+                                        className="block h-16 w-auto"
                                         src={'/logo-main.png'}
                                         alt="logo"
-                                        width={100}
-                                        height={100}
+                                        width={128}
+                                        height={64}
+                                        priority
                                     />
+                                </div>
+                                {/* Government Logo - MORTH */}
+                                <div className="flex w-16 h-16 flex-shrink-0 items-center mr-4">
                                     <Image
-                                        className="hidden h-full w-full lg:block"
-                                        src={'/logo-main.png'}
-                                        alt="logo"
-                                        width={40}
-                                        height={20}
+                                        src="/MORTH.png"
+                                        alt="MORTH logo"
+                                        width={64}
+                                        height={64}
+                                        className="object-contain"
+                                    />
+                                </div>
+
+
+
+                                {/* Government Logo - RVSF */}
+                                <div className="flex w-20 h-20 scale-175 flex-shrink-0 items-center md:ml-3 ml-0">
+                                    <Image
+                                        src="/RVSF.png"
+                                        alt="RVSF logo"
+                                        width={80}
+                                        height={80}
+                                        className="object-contain h-32"
                                     />
                                 </div>
 
                                 {/* LINKS */}
-
                                 <div className="hidden lg:block m-auto">
                                     <div className="flex space-x-4">
                                         {navigation.map((item) => (
