@@ -150,7 +150,7 @@ const Navbar = () => {
                                 {/* Government Logo - MORTH */}
                                 <div className="flex w-16 h-16 flex-shrink-0 items-center mr-4">
                                     <Image
-                                        src="/MORTH.png"
+                                        src="/MORTH.jpg"
                                         alt="MORTH logo"
                                         width={64}
                                         height={64}
@@ -163,7 +163,7 @@ const Navbar = () => {
                                 {/* Government Logo - RVSF */}
                                 <div className="flex w-20 h-20 scale-175 flex-shrink-0 items-center md:ml-3 ml-0">
                                     <Image
-                                        src="/RVSF.png"
+                                        src="/RVSF.jpg"
                                         alt="RVSF logo"
                                         width={80}
                                         height={80}
