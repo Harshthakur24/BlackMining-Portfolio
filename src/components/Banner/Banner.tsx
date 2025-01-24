@@ -148,14 +148,14 @@ const Banner = () => {
                             <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-7xl 2xl:text-8xl font-semibold text-white mb-2 md:mb-3 leading-tight">
                                 Transform Your Vehicle into a <br className="hidden md:block" />Treasure Trove.
                             </h1>
-                            <p className="text-base sm:text-lg text-white max-w-2xl mx-auto px-4">
+                            <p className="text-bold sm:text-xl text-white max-w-2xl mx-auto px-4 font-bold">
                                 Your Trusted Partner in Safe and Legal Vehicle Disposal.
                             </p>
                         </div>
 
                         {/* Phone Number */}
                         <div className="text-center mb-4">
-                            <a href="tel:+919999999999" className="text-white text-2xl font-semibold hover:text-blue-400 transition-colors">
+                            <a href="tel:+918989898993" className="text-white text-2xl font-semibold hover:text-blue-400 transition-colors">
                                 +91 89 89 89 89 93
                             </a>
                         </div>

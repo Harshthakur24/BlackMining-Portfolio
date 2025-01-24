@@ -15,7 +15,7 @@ const TopBar = () => {
                             <span className="hidden md:inline">Blackminingjunk@gmail.com</span>
                         </a>
                         <a
-                            href="tel:+91 89 89 89 89 93"
+                            href="tel:+918989898993"
                             className="hover:text-gray-300 transition-colors duration-300 flex items-center gap-2"
                         >
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
