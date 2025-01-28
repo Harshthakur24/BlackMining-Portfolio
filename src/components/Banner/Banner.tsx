@@ -145,19 +145,29 @@ const Banner = () => {
                     <div className="text-white">
                         {/* Hero Text Section - Added pt classes for spacing */}
                         <div className="text-center mb-4 md:mb-8 pt-8 md:pt-12">
-                            <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-7xl 2xl:text-8xl font-semibold text-white mb-2 md:mb-3 leading-tight">
+                            <h1 className="text-4xl sm:text-4xl md:text-5xl lg:text-7xl 2xl:text-8xl font-semibold text-white mb-2 md:mb-3 leading-tight text-shadow">
                                 Transform Your Vehicle into a <br className="hidden md:block" />Treasure Trove.
                             </h1>
-                            <p className="text-bold sm:text-xl text-white max-w-2xl mx-auto px-4 font-bold">
+                            <p className="text-bold sm:text-xl text-white max-w-2xl mx-auto px-4 font-bold text-shadow">
                                 Your Trusted Partner in Safe and Legal Vehicle Disposal.
                             </p>
+                            <style jsx>{`
+                                .text-shadow {
+                                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+                                }
+                            `}</style>
                         </div>
 
                         {/* Phone Number */}
                         <div className="text-center mb-4">
-                            <a href="tel:+918989898993" className="text-white text-2xl font-semibold hover:text-blue-400 transition-colors">
+                            <a href="tel:+918989898993" className="text-white text-2xl font-semibold hover:text-blue-400 transition-colors text-shadow">
                                 +91 89 89 89 89 93
                             </a>
+                            <style jsx>{`
+                                .text-shadow {
+                                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+                                }
+                            `}</style>
                         </div>
 
                         {/* CTA Buttons - Fixed alignment */}
