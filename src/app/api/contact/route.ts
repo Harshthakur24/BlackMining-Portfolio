@@ -39,7 +39,7 @@ export async function POST(request: Request) {
         },
       }),
       resend.emails.send({
-        from: 'Black Mining <onboarding@resend.dev>',
+        from: 'Black Mining <no-reply@ecoelv.in>',
         to: 'thakur2004harsh@gmail.com',
         subject: `New Contact Request - ${ownerName}`,
         react: ContactFormEmail({
