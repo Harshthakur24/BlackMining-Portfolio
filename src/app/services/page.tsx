@@ -7,8 +7,14 @@ import Link from "next/link"
 
 export default function ServicesPage() {
     return (
-        <main className="mb-40 md:mb-28 mt-6">
-            <div className="text-center">
+        <main className="mb-40 md:mb-36" style={{
+            backgroundImage: 'url("/ffflurry.svg")',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundColor: 'black'
+        }}>
+            <div className="text-center pt-20 md:pt-20">
                 <h1 className="text-4xl font-semibold text-white sm:text-6xl lg:text-8xl md:4px lh-96">
                     Services we provide <br />
                 </h1>

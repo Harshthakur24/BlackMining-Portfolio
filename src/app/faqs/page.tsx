@@ -103,7 +103,13 @@ export default function FaqsPage() {
     const [openIndex, setOpenIndex] = useState<number | null>(null)
 
     return (
-        <main className="min-h-screen py-16 px-4 bg-black mb-56 mt-2">
+        <main className="min-h-screen py-16 px-4 bg-black mb-56 mt-2" style={{
+            backgroundImage: 'url("/cccoil.svg")',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundColor: 'black'
+        }}>
             <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}

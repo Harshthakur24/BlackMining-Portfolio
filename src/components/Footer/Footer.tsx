@@ -5,24 +5,37 @@ import Image from "next/image";
 // MIDDLE LINKS DATA
 interface ProductType {
     id: number;
-    link: string[];
+    link: Array<{
+        name: string;
+        path: string;
+    }>;
 }
 
 const products: ProductType[] = [
     {
         id: 1,
-        link: ['Home', 'Services', 'About', 'Locations'],
+        link: [
+            { name: 'Home', path: '/' },
+            { name: 'Services', path: '/services' },
+            { name: 'About', path: '/about' },
+            { name: 'Gallery', path: '/gallery' }
+        ],
     },
     {
         id: 2,
-        link: ['Vehicle Disposal', 'Recycling Process', 'Legal Info', 'Contact']
+        link: [
+            { name: 'Vehicle Disposal', path: '/services' },
+            { name: 'Recycling Process', path: '/services' },
+            { name: 'Legal Info', path: '/about' },
+            { name: 'Contact', path: '/#contact' }
+        ]
     }
 ]
 
 const footer = () => {
     return (
         <div className="bg-darkblue -mt-40">
-            <div className="mx-auto w-full pt-32 md:pt-44 px-4 sm:px-6 lg:px-8">
+            <div className="mx-auto w-full pt-2 md:pt-4 px-4 sm:px-6 lg:px-8">
                 <div className="my-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
 
                     {/* COLUMN-1 */}
@@ -50,9 +63,14 @@ const footer = () => {
                     {products.map((product) => (
                         <div key={product.id} className="group relative col-span-2 md:col-span-4 lg:col-span-2">
                             <ul>
-                                {product.link.map((link: string, index: number) => (
-                                    <li key={index} className='mb-5'>
-                                        <Link href="/" className="text-white text-sm font-normal mb-6 space-links">{link}</Link>
+                                {product.link.map((link, index: number) => (
+                                    <li key={index} className='mb-3'>
+                                        <Link
+                                            href={link.path}
+                                            className="text-sm font-normal text-white space-links"
+                                        >
+                                            {link.name}
+                                        </Link>
                                     </li>
                                 ))}
                             </ul>

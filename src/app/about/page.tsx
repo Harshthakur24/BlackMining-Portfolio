@@ -3,7 +3,13 @@ import { ContainerScroll } from "@/src/components/ui/container-scroll-animation"
 
 export default function AboutPage() {
     return (
-        <main className="min-h-screen pt-2 bg-black w-full">
+        <main className="min-h-screen pt-2 bg-black w-full" style={{
+            backgroundImage: 'url("/bbburst.svg")',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundColor: 'black'
+        }}>
             <h1 className="flex justify-center mt-16 text-5xl md:text-8xl text-white font-bold bg-clip-text">
                 About Us
             </h1>

@@ -136,7 +136,7 @@ const Banner = () => {
 
                 {/* Main Content Container with text color adjustments */}
                 <div className="relative container max-w-7xl mx-auto px-4 md:px-6 z-10 bg-black" style={{
-                    backgroundImage: 'url("/curl.svg")',
+                    backgroundImage: 'url("/ttten.svg")',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
                     backgroundSize: 'cover',
