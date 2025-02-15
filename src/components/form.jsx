@@ -48,7 +48,7 @@ const Form = () => {
         id="contact"
         className="hero h-fit p-2 py-8 md:py-16 mt-2 flex flex-col justify-center items-center gap-4"
         style={{
-          backgroundImage: "linear-gradient(to right, rgba(76, 101, 240, 0.2), rgba(76, 101, 240, 0.2)), url(/images/globe.jpg)",
+          backgroundImage: "linear-gradient(to right, rgba(0, 0, 0, 1), rgba(76, 101, 240, 0.2)), url(/images/globe.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}>
@@ -74,6 +74,27 @@ const Form = () => {
               type="email"
               name="email"
               placeholder="Your Email"
+              className="p-2 border-2 bg-transparent border-white rounded-md w-full focus:outline-none placeholder:text-white/70"
+              required
+            />
+            <input
+              type="text"
+              name="location"
+              placeholder="Your Location"
+              className="p-2 border-2 bg-transparent border-white rounded-md w-full focus:outline-none placeholder:text-white/70"
+              required
+            />
+            <input
+              type="text"
+              name="model"
+              placeholder="Your Vehicle Model"
+              className="p-2 border-2 bg-transparent border-white rounded-md w-full focus:outline-none placeholder:text-white/70"
+              required
+            />
+            <input
+              type="text"
+              name="number"
+              placeholder="Vehicle Number"
               className="p-2 border-2 bg-transparent border-white rounded-md w-full focus:outline-none placeholder:text-white/70"
               required
             />
