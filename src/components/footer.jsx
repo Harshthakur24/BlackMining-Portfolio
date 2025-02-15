@@ -90,11 +90,6 @@ const Footer = () => {
                 About
               </a>
             </li>
-            <li className="mb-4">
-              <a className="hover:border-b border-white pb-1 font-semibold text-white space-links" href="/gallery">
-                Gallery
-              </a>
-            </li>
           </ul>
         </div>
   
