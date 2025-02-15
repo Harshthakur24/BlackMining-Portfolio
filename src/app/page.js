@@ -69,11 +69,12 @@ const Home = () => {
             <div className='flex flex-col gap-4 items-center justify-center'>
               <p className=' text-[18px] md:text-4xl font-semibold text-white'>Hassle-Free Vehicle Scrapping – Free Pickup & Instant Valuation! Book Now.</p>
               <hr className='w-full md:w-1/2 border-white' />
-              <button 
+              <a 
                 className='cursor-pointer w-fit bg-[#F9345b] hover:bg-[#F9345b]/80 text-white text-[16px] md:text-[20px] font-bold py-4 px-8 rounded-lg '
+                href='/#contact'
               >
                 Contact Now
-              </button>
+              </a>
             </div>
 
             
