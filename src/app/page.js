@@ -263,8 +263,8 @@ const Home = () => {
 
             <h1 className='text-black max-w-[900px] font-bold text-4xl md:text-6xl'>Trusted by Thousands of Vehicle Owners for Safe and Reliable Disposal Services</h1>
 
-          <div className='max-md:flex-col flex justify-center gap-16 md:gap-8 text-[18px]'>
-                <div ref={testRef1} className='h-[250px] relative w-[400px] bg-blue-500 text-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-500' style={{opacity: 1, transform: 'translateY(100px)'}}>
+          <div className='max-md:flex-col flex justify-center gap-16 md:gap-8 text-[18px] px-2'>
+                <div ref={testRef1} className='min-h-[250px] relative max-w-[400px] bg-blue-500 text-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-500' style={{opacity: 1, transform: 'translateY(100px)'}}>
                   <div className='overflow-hidden h-[80px] w-[80px] bg-white rounded-full absolute top-[calc(-40px)] left-[calc(50%-40px)]'>
                     <img src="/images/ankush.webp" alt="" />  
                   </div>  
@@ -276,7 +276,7 @@ const Home = () => {
                 </div>
 
 
-                <div ref={testRef2} className='h-[250px] relative w-[400px] bg-blue-500 text-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-500' style={{opacity: 1, transform: 'translateY(100px)'}}>
+                <div ref={testRef2} className='min-h-[250px] relative max-w-[400px] bg-blue-500 text-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-500' style={{opacity: 1, transform: 'translateY(100px)'}}>
                   <div className='overflow-hidden h-[80px] w-[80px] bg-white rounded-full absolute top-[calc(-40px)] left-[calc(50%-40px)]'>
                     <img src="/images/shreya.webp" alt="" />  
                   </div>  
@@ -286,7 +286,7 @@ const Home = () => {
                   
                   <p className='mt-4'>I was impressed by their commitment to environmental sustainability. They ensured every recyclable part was properly processed.</p>
                 </div>  
-                <div ref={testRef3} className='h-[250px] relative w-[400px] bg-blue-500 text-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-500' style={{opacity: 1, transform: 'translateY(100px)'}}>
+                <div ref={testRef3} className='min-h-[250px] relative max-w-[400px] bg-blue-500 text-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-500' style={{opacity: 1, transform: 'translateY(100px)'}}>
                   <div className='overflow-hidden h-[80px] w-[80px] bg-white rounded-full absolute top-[calc(-40px)] left-[calc(50%-40px)]'>
                     <img src="/images/shivani.webp" alt="" />  
                   </div>  

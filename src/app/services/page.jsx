@@ -2,7 +2,7 @@ import React from 'react'
 
 const Services = () => {
   return (
-    <div classNameName=''>
+    <div>
 
         <section className=" bg-[#49aef7]/80 pb-12 "
           style={{

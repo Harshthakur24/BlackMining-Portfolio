@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.nextjs-toast-errors-parent {
+    display: none;
+    background-color: #10d6f5;
+}
+
 h1 {
 	font-family: 'Times New Roman', Times, serif;
 }
