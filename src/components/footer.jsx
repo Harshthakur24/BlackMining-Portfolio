@@ -23,7 +23,7 @@ const Footer = () => {
               data-nimg="1"
               className=""
               style={{ color: "transparent" }}
-              src="../../public/images/logo.png"
+              src="/images/logo.png"
             />
             <h1 className="text-xl font-bold text-white">Black Mining Junkyard LLP</h1>
           </div>
@@ -37,7 +37,7 @@ const Footer = () => {
                 decoding="async"
                 data-nimg="1"
                 style={{ color: "transparent" }}
-                src="../../public/images/facebook.svg"
+                src="/images/facebook.svg"
               />
             </a>
             <a className=" p-3 flex hover:scale-110 transition-all duration-200 ease-in items-center justify-center bg-[#4AE454]/30 rounded-full" href="https://twitter.com">
@@ -49,7 +49,7 @@ const Footer = () => {
                 decoding="async"
                 data-nimg="1"
                 style={{ color: "transparent" }}
-                src="../../public/images/twitter.svg"
+                src="/images/twitter.svg"
               />
             </a>
             <a
@@ -66,7 +66,7 @@ const Footer = () => {
                 decoding="async"
                 data-nimg="1"
                 style={{ color: "transparent" }}
-                src="../../public/images/instagram.svg"
+                src="/images/instagram.svg"
               />
             </a>
           </div>
@@ -135,7 +135,7 @@ const Footer = () => {
               decoding="async"
               data-nimg="1"
               style={{ color: "transparent" }}
-              src="../../public/images/location.svg"
+              src="/images/location.svg"
             />
             <h5 className="text-base font-semibold text-offwhite">
               Khasra no. 103 Barhana Jhajjar
@@ -150,7 +150,7 @@ const Footer = () => {
               decoding="async"
               data-nimg="1"
               style={{ color: "transparent" }}
-              src="../../public/images/phone.svg"
+              src="/images/phone.svg"
             />
             <h5 className="text-base font-semibold text-offwhite">+91 89 89 89 89 93</h5>
           </div>
@@ -163,7 +163,7 @@ const Footer = () => {
               decoding="async"
               data-nimg="1"
               style={{ color: "transparent" }}
-              src="../../public/images/email.svg"
+              src="/images/email.svg"
             />
             <h5 className="text-base font-semibold text-offwhite">
               blackminingjunk@gmail.com

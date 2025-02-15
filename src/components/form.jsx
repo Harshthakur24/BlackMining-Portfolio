@@ -1,7 +1,8 @@
+'use client'
+
 import { useState } from "react";
 import toast, { Toaster } from 'react-hot-toast' 
 import { Resend } from 'resend'
-import axios from 'axios'
 
 const Form = () => {
   const [loading, setLoading] = useState(false);
@@ -13,27 +14,41 @@ const Form = () => {
         
         try {
           toast.loading("Sending Message...")
-          
-          const response = await axios.post('http://localhost:5000/send-email', {
-            name: data.name,
-            email: data.email,
-            message: data.message
-          })
-          console.log(response);
 
+          const response = await fetch('/api/send-email', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+          });
+
+          if(response.status !== 200) {
+            throw new Error('Failed to send message')
+          }
+          
+          toast.dismiss();
           toast.success("Message Sent Successfully")
+
+          setTimeout(() => {
+            toast.dismiss();
+          }, 3000);
         } catch (error) {
           console.error(error);
           toast.dismiss();
           toast.error("Failed to send message")
+          setTimeout(() => {
+            toast.dismiss();
+          }, 3000);
         }
       };
 
     return (
         <div
+        id="contact"
         className="hero h-fit p-2 py-8 md:py-16 mt-2 flex flex-col justify-center items-center gap-4"
         style={{
-          backgroundImage: "linear-gradient(to right, rgba(76, 101, 240, 0.2), rgba(76, 101, 240, 0.2)), url('https://media.istockphoto.com/id/1405728317/vector/global-network-connection-world-map-point-and-line-composition-concept-of-global-business.jpg?s=612x612&w=0&k=20&c=u_DZ9MwU6DFC0-TVD4qnZFmHDu2PoWYhDzppUaijv-c=')",
+          backgroundImage: "linear-gradient(to right, rgba(76, 101, 240, 0.2), rgba(76, 101, 240, 0.2)), url(/images/globe.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}>
@@ -52,20 +67,20 @@ const Form = () => {
               type="text"
               name="name"
               placeholder="Your Name"
-              className="p-2 border-2 border-white rounded-md w-full focus:outline-none placeholder:text-white/70"
+              className="p-2 border-2 bg-transparent border-white rounded-md w-full focus:outline-none placeholder:text-white/70"
               required
             />
             <input
               type="email"
               name="email"
               placeholder="Your Email"
-              className="p-2 border-2 border-white rounded-md w-full focus:outline-none placeholder:text-white/70"
+              className="p-2 border-2 bg-transparent border-white rounded-md w-full focus:outline-none placeholder:text-white/70"
               required
             />
             <textarea
               name="message"
               placeholder="Your Message"
-              className="p-2 border-2 border-white rounded-md w-full focus:outline-none placeholder:text-white/70"
+              className="p-2 border-2 bg-transparent border-white rounded-md w-full focus:outline-none placeholder:text-white/70"
               rows="4"
               required
             ></textarea>

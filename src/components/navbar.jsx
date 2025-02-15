@@ -1,23 +1,26 @@
-import { useState } from 'react'
+'use client';
+import { useEffect, useState } from 'react'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)
 
-  window.onscroll = function() {scrollFunction()};
+  useEffect(() => {
+    window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.getElementsByTagName('nav')[0].style.backgroundColor = 'rgb(89, 110, 247)';
-  } else {
-    document.getElementsByTagName('nav')[0].style.backgroundColor = 'transparent';
-  }
-}
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementsByTagName('nav')[0].style.backgroundColor = 'rgb(89, 110, 247)';
+      } else {
+        document.getElementsByTagName('nav')[0].style.backgroundColor = 'transparent';
+      }
+    }
+  }, [])
 
   return (
     <nav className='fixed w-full z-40 px-0 py-2 md:py-4 transition-all duration-700 ease-in-out'>
         <div className=' w-full h-[40px] max-w-[1200px] mx-auto flex justify-between items-center'>
             <div className='logo w-16 md:w-20'>
-              <img src="../../public/images/logo.png" alt="" />
+              <img src="/images/logo.png" alt="" />
             </div>
 
             <ul className='flex gap-8 text-decoration-none list-none max-lg:hidden text-white font-semibold text-lg'>
@@ -28,7 +31,7 @@ function scrollFunction() {
               <li className='hover:text-white hover:scale-110 transition-all duration-300 ease-in-out'><a href="/faqs">FAQs</a></li>
             </ul>
 
-            <a className='max-lg:hidden px-4 text-white font-semibold py-2 bg-[#F9345b] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg' href="#">Contact Us</a>
+            <a className='max-lg:hidden px-4 text-white font-semibold py-2 bg-[#F9345b] hover:scale-105 transition-all duration-300 ease-in-out rounded-lg' href="/#contact">Contact Us</a>
 
             <div 
               className="lg:hidden w-6  mr-4"
@@ -41,14 +44,13 @@ function scrollFunction() {
         </div>
 
         <div 
-          className={`absolute right-6 top-[60px] w-[300px] backdrop-filter backdrop-blur-sm text-white font-bold rounded-lg px-8 py-4 text-[20px] list-none max-md:left-2 max-md:w-full lg:hidden transition-all duration-300 ease-in-out  ${open ? 'opacity-100 ' : 'opacity-0'}`}
+          className={` bg-[#4AE454]/50 absolute md:right-6 top-[60px] w-[300px] backdrop-filter backdrop-blur-sm text-white font-bold rounded-lg px-8 py-4 text-[20px] list-none max-md:left-2 max-md:w-[97%] max-md: lg:hidden transition-all duration-300 ease-in-out  ${open ? 'opacity-100 ' : 'opacity-0'}`}
         >
-            <li className='p-2 flex justify-center items-center '><a href="#">Home</a></li>
-            <li className='p-2 flex justify-center items-center '><a href="#">About</a></li>
-            <li className='p-2 flex justify-center items-center '><a href="#">Services</a></li>
+            <li className='p-2 flex justify-center items-center '><a href="/">Home</a></li>
+            <li className='p-2 flex justify-center items-center '><a href="/about">About</a></li>
+            <li className='p-2 flex justify-center items-center '><a href="/services">Services</a></li>
             {/* <li className='p-2 flex justify-center items-center '><a href="#">Gallery</a></li> */}
-            <li className='p-2 flex justify-center items-center '><a href="#">FAQs</a></li>
-            <li className='p-2 flex justify-center items-center '><a href="#">Contact Us</a></li>
+            <li className='p-2 flex justify-center items-center '><a href="/faqs">FAQs</a></li>
         </div>
  
     </nav>
