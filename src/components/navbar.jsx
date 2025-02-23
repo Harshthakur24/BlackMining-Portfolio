@@ -19,8 +19,13 @@ const Navbar = () => {
   return (
     <nav className='fixed w-full z-40 px-0 py-2 md:py-4 transition-all duration-700 ease-in-out'>
         <div className=' w-full h-[40px] max-w-[1200px] mx-auto flex justify-between items-center'>
+            <div className='flex gap-3 items-center'>
             <div className='logo w-16 md:w-20'>
               <img src="/images/logo.png" alt="" />
+            </div>
+
+            <p className='text-white max-md:text-[10px] text-[12px] max-w-[250px]'>An ISO 9001:2015, 14001:2015, 45001 : 2018, 27001:2013 CERTIFIED COMPANY</p>
+
             </div>
 
             <ul className='flex gap-8 text-decoration-none list-none max-lg:hidden text-white font-semibold text-lg'>
