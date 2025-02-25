@@ -25,7 +25,11 @@ const Footer = () => {
               style={{ color: "transparent" }}
               src="/images/logo.png"
             />
-            <h1 className="text-xl font-bold text-white">Black Mining Junkyard LLP</h1>
+            <div>
+              <h1 className="text-xl font-bold text-white">Black Mining Junkyard LLP</h1>
+            <p className='text-white max-md:text-[10px] text-[12px] max-w-[250px]'>An ISO 9001:2015, 14001:2015, 45001 : 2018, 27001:2013 CERTIFIED COMPANY</p>
+              
+            </div>
           </div>
           <div className="flex gap-4">
             <a className="p-3 px-[0.9rem] hover:scale-110 transition-all duration-200 ease-in flex items-center justify-center bg-[#4AE454]/30 rounded-full" href="https://facebook.com">
