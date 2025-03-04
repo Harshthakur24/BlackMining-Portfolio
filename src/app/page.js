@@ -67,7 +67,7 @@ const Home = () => {
             </div>
 
             <h1 className="mb-5 text-white content flex flex-col gap-8 items-center">
-              <p className='text-3xl md:text-6xl font-bold '>Recycle and Get the Best Value for Your</p>
+              <p className='text-3xl md:text-6xl font-bold '> R and Get the Best Value for Your</p>
               <ol className='text-bold text-[30px] md:text-[60px] '>
                 <li><span>Cars</span></li>
                 <li><span>Two Wheelers</span></li>
