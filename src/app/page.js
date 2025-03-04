@@ -1,13 +1,20 @@
 'use client'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Form from '../components/form';
+import Popup from '@/components/popup';
 
 const Home = () => {
   const testRef1 = React.createRef();
   const testRef2 = React.createRef();
   const testRef3 = React.createRef();
 
-  
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowPopup(true);
+    }, 1500);
+  }, [])
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -26,7 +33,9 @@ const Home = () => {
   }, [testRef1, testRef2, testRef3]);
 
   return (
-    <main>
+    <main className='transition-all duration-300 ease-in-out'>
+      { showPopup && <Popup setShowPopup={setShowPopup}/>}
+
       <div
         className="hero h-fit md:min-h-screen flex flex-col justify-center" 
         style={{
@@ -67,7 +76,9 @@ const Home = () => {
             </h1>
 
             <div className='flex flex-col gap-4 items-center justify-center'>
-              <p className=' text-[18px] md:text-4xl font-semibold text-white'>Hassle-Free Vehicle Scrapping – Free Pickup & Instant Valuation! Book Now.</p>
+              <p className=' text-[18px] md:text-4xl font-semibold text-white'>
+                Hassle-Free Vehicle Scrapping – Free Pickup & Instant Valuation! Book Now.
+              </p>
               <hr className='w-full md:w-1/2 border-white' />
               <a 
                 className='cursor-pointer w-fit bg-[#F9345b] hover:bg-[#F9345b]/80 text-white text-[16px] md:text-[20px] font-bold py-4 px-8 rounded-lg '
