@@ -62,6 +62,8 @@ const Home = () => {
                 Certified by MSTC Ltd (Govt of India Enterprise)
               </h1>
 
+              <h1 className='text-white font-semibold text-[24px] mt-2 border-b-[1px] border-white w-fit mx-auto'>Contact Now - +91 89 89 89 89 93</h1>
+
             </div>
 
             <h1 className="mb-5 text-white content flex flex-col gap-8 items-center">

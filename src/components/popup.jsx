@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Form from "./form";
 
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
@@ -12,6 +11,8 @@ const Popup = ({setShowPopup}) => {
         const formData = new FormData(e.target);
         const data = Object.fromEntries(formData.entries());
         
+        setLoading(true);
+
         try {
           toast.loading("Sending Message...")
 
@@ -40,6 +41,9 @@ const Popup = ({setShowPopup}) => {
           setTimeout(() => {
             toast.dismiss();
           }, 3000);
+        }
+        finally {
+          setLoading(false);
         }
       };
 
