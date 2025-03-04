@@ -1,13 +1,20 @@
 'use client'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import Form from '../components/form';
+import Popup from '@/components/popup';
 
 const Home = () => {
   const testRef1 = React.createRef();
   const testRef2 = React.createRef();
   const testRef3 = React.createRef();
 
-  
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowPopup(true);
+    }, 1500);
+  }, [])
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -26,7 +33,9 @@ const Home = () => {
   }, [testRef1, testRef2, testRef3]);
 
   return (
-    <main>
+    <main className='transition-all duration-300 ease-in-out'>
+      { showPopup && <Popup setShowPopup={setShowPopup}/>}
+
       <div
         className="hero h-fit md:min-h-screen flex flex-col justify-center" 
         style={{
@@ -53,10 +62,12 @@ const Home = () => {
                 Certified by MSTC Ltd (Govt of India Enterprise)
               </h1>
 
+              <h1 className='text-white font-semibold text-[24px] mt-2 border-b-[1px] border-white w-fit mx-auto'>Contact Now - +91 89 89 89 89 93</h1>
+
             </div>
 
             <h1 className="mb-5 text-white content flex flex-col gap-8 items-center">
-              <p className='text-3xl md:text-6xl font-bold '>Recycle and Get the Best Value for Your</p>
+              <p className='text-3xl md:text-6xl font-bold '> R and Get the Best Value for Your</p>
               <ol className='text-bold text-[30px] md:text-[60px] '>
                 <li><span>Cars</span></li>
                 <li><span>Two Wheelers</span></li>
@@ -67,7 +78,9 @@ const Home = () => {
             </h1>
 
             <div className='flex flex-col gap-4 items-center justify-center'>
-              <p className=' text-[18px] md:text-4xl font-semibold text-white'>Hassle-Free Vehicle Scrapping – Free Pickup & Instant Valuation! Book Now.</p>
+              <p className=' text-[18px] md:text-4xl font-semibold text-white'>
+                Hassle-Free Vehicle Scrapping – Free Pickup & Instant Valuation! Book Now.
+              </p>
               <hr className='w-full md:w-1/2 border-white' />
               <a 
                 className='cursor-pointer w-fit bg-[#F9345b] hover:bg-[#F9345b]/80 text-white text-[16px] md:text-[20px] font-bold py-4 px-8 rounded-lg '

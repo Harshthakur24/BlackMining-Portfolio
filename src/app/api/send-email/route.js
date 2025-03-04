@@ -14,10 +14,13 @@ export const POST = async (req) => {
             html: `<h2>Black Mining Website Contact Submission Response</h2> 
                    <br /> <h3>Name:</h3> <p>${body.name}</p> 
                    <br /> <h3>Email:</h3> <p>${body.email}</p> 
-                   <br /> <h3>Message:</h3> <p>${body.message}</p>
-                   <br /> <h3>Location:</h3> <p>${body.location}</p>
-                   <br /> <h3>Vehicle Model:</h3> <p>${body.model}</p>
-                   <br /> <h3>Vehicle Number:</h3> <p>${body.number}</p>`,
+                   <br /> <h3>Message:</h3> <p>${body.message || 'Not available'}</p>
+                   <br /> <h3>Location:</h3> <p>${body.location || 'Not available'}</p>
+                   <br /> <h3>Vehicle Model:</h3> <p>${body.model || 'Not available'}</p>
+                   <br /> <h3>Vehicle Number:</h3> <p>${body.number || 'Not available'}</p>
+                   <br /> <h3>Phone Number:</h3> <p>${body.phone || 'Not available'}</p>
+                   
+                   `,
         });
 
         return NextResponse.json({ message: "Email sent successfully", status: 200 });
