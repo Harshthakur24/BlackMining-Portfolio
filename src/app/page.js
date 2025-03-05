@@ -67,10 +67,10 @@ const Home = () => {
             </div>
 
             <h1 className="mb-5 text-white content flex flex-col gap-8 items-center">
-              <p className='text-3xl md:text-6xl font-bold '> R and Get the Best Value for Your</p>
+              <p className='text-3xl md:text-6xl font-bold '> Scrap Your Old Car for the Best Price </p>
               <ol className='text-bold text-[30px] md:text-[60px] '>
-                <li><span>Cars</span></li>
-                <li><span>Two Wheelers</span></li>
+                <li><span>Free Pickup</span></li>
+                <li><span>Instant Payment</span></li>
                 <li><span>Three Wheelers</span></li>
                 <li><span>Vans</span></li>
                 <li><span>Industrial Machinery</span></li>
@@ -79,14 +79,14 @@ const Home = () => {
 
             <div className='flex flex-col gap-4 items-center justify-center'>
               <p className=' text-[18px] md:text-4xl font-semibold text-white'>
-                Hassle-Free Vehicle Scrapping – Free Pickup & Instant Valuation! Book Now.
+                Get the highest value for your scrap car with hassle-free pickup, instant payment, and eco-friendly recycling..
               </p>
               <hr className='w-full md:w-1/2 border-white' />
               <a 
                 className='cursor-pointer w-fit bg-[#F9345b] hover:bg-[#F9345b]/80 text-white text-[16px] md:text-[20px] font-bold py-4 px-8 rounded-lg '
                 href='/#contact'
               >
-                Contact Now
+                Get Free Car Valuation Now!
               </a>
             </div>
 
