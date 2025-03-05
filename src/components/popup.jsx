@@ -94,6 +94,11 @@ const Popup = ({setShowPopup}) => {
                             Send Message
                         </button>
                     </form>
+
+                    <div className="flex items-center gap-2 mt-4">
+                      <hr className="w-full border-black/50" /><p className="text-nowrap text-black/70">OR CALL</p><hr className="w-full border-black/50" />
+                    </div>
+                    <p className="text-center font-semibold text-lg border-b-[1px] border-black/70 w-fit mx-auto border-dashed">+91 89 89 89 89 93</p>
                 </div>
             </div>
         </div>

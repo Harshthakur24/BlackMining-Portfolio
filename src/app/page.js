@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import Form from '../components/form';
 import Popup from '@/components/popup';
+import Image from 'next/image';
 
 const Home = () => {
   const testRef1 = React.createRef();
@@ -35,6 +36,10 @@ const Home = () => {
   return (
     <main className='transition-all duration-300 ease-in-out'>
       { showPopup && <Popup setShowPopup={setShowPopup}/>}
+
+      <a className='fixed right-4 bottom-4 z-50 hover:scale-110 duration-300 ease-in-out transition-all' href="https://wa.me/918989898993" target="_blank" rel="noopener noreferrer">
+        <Image src="/images/whatsapp.png" width={50} height={50} alt="whatsapp" />
+      </a>
 
       <div
         className="hero h-fit md:min-h-screen flex flex-col justify-center" 
