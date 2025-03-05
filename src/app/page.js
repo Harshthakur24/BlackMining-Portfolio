@@ -76,7 +76,7 @@ const Home = () => {
               <ol className='text-bold text-[30px] md:text-[60px] '>
                 <li><span>Free Pickup</span></li>
                 <li><span>Instant Payment</span></li>
-                <li><span>"Best price</span></li>
+                <li><span>Best price</span></li>
                 <li><span>Eco-friendly recycling</span></li>
                 <li><span>Scrap Car Recycling</span></li>
               </ol>  
@@ -206,7 +206,7 @@ const Home = () => {
                   </div>
                   <div className='md:max-w-[450px] flex flex-col items-center md:items-start gap-2 '>
                     <h1 className='font-semibold text-3xl'>Digital Process</h1>
-                    <h1 className='text-center md:text-left text-[22px] md:text-[20px]'>Quick and transparent transactions through a fully online process.</h1>
+                    <h1 className='text-center md:text-left text-[22px] md:text-[20px]'>Easy Online Process – Quick & Transparent Transactions!</h1>
                   </div>
                 </div>
               </div>
@@ -234,8 +234,8 @@ const Home = () => {
                 <div className='border-2 border-white rounded-lg p-4 h-[300px] w-[300px] flex flex-col items-center justify-center gap-4'>
                     <img src="/images/car.png" className='w-[60px] mx-auto' alt="" />
 
-                    <h1 className='text-center text-white text-2xl font-semibold'>Share Details of your Vehicle</h1>
-                    <p className='text-center text-white max-md:text-[18px]'>Tell us the year, model and condition of your vehicle to help us find the right value.</p>
+                    <h1 className='text-center text-white text-2xl font-semibold'>Share Your Vehicle Details</h1>
+                    <p className='text-center text-white max-md:text-[18px]'>Provide your vehicle's year, model, and condition to get the best price offer.</p>
                 </div>
               </div>
 
@@ -249,7 +249,7 @@ const Home = () => {
                     <img src="/images/money.png" className='w-[60px] mx-auto' alt="" />
 
                     <h1 className='text-center text-white text-2xl font-semibold'>Get an Instant Quote</h1>
-                    <p className='text-center text-white max-md:text-[18px]'>We will provide you with an instant offer based on your vehicle details.</p>
+                    <p className='text-center text-white max-md:text-[18px]'>Get an instant cash offer based on your vehicle details. (More direct & appealing)</p>
                 </div>
               </div>
 
@@ -262,7 +262,7 @@ const Home = () => {
                     <img src="/images/tow.png" className='w-[60px] mx-auto' alt="" />
 
                     <h1 className='text-center text-white text-2xl font-semibold'>Free Vehicle Pickup</h1>
-                    <p className='text-center text-white max-md:text-[18px]'>We will pick up your vehicle from your doorstep for FREE!.</p>
+                    <p className='text-center text-white max-md:text-[18px]'>Enjoy FREE doorstep vehicle pickup—fast & hassle-free!</p>
                 </div>
               </div>
             </div>
@@ -279,7 +279,7 @@ const Home = () => {
         <div className="hero-content text-center">
           <div className=" flex flex-col items-center mx-auto px-4 py-16 gap-24">
 
-            <h1 className='text-black max-w-[900px] font-bold text-4xl md:text-6xl'>Trusted by Thousands of Vehicle Owners for Safe and Reliable Disposal Services</h1>
+            <h1 className='text-black max-w-[900px] font-bold text-4xl md:text-6xl'>Trusted by Thousands for Safe & Reliable Vehicle Disposal</h1>
 
           <div className='max-md:flex-col flex justify-center gap-16 md:gap-8 text-[18px] px-2'>
                 <div ref={testRef1} className='min-h-[250px] relative max-w-[400px] bg-blue-500 text-white p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-500' style={{opacity: 1, transform: 'translateY(100px)'}}>
