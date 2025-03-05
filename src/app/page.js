@@ -53,7 +53,7 @@ const Home = () => {
           <div className=" flex flex-col items-center mx-auto px-4 py-16 gap-12">
             <div>
               <div className='flex items-center justify-center mb-2'>
-                <img src="/images/govt.png" className='bg-transparent w-[50px] md:w-[100px]' alt="" />
+                <img src="/images/govt.png" className='bg-transparent w-[50px] md:w-[100px]' alt="Certified by MSTC Ltd logo" />
               </div>
 
               <h1 
@@ -72,26 +72,26 @@ const Home = () => {
             </div>
 
             <h1 className="mb-5 text-white content flex flex-col gap-8 items-center">
-              <p className='text-3xl md:text-6xl font-bold '> R and Get the Best Value for Your</p>
+              <p className='text-3xl md:text-6xl font-bold '> Scrap Your Old Car for the Best Price </p>
               <ol className='text-bold text-[30px] md:text-[60px] '>
-                <li><span>Cars</span></li>
-                <li><span>Two Wheelers</span></li>
-                <li><span>Three Wheelers</span></li>
-                <li><span>Vans</span></li>
-                <li><span>Industrial Machinery</span></li>
+                <li><span>Free Pickup</span></li>
+                <li><span>Instant Payment</span></li>
+                <li><span>"Best price</span></li>
+                <li><span>Eco-friendly recycling</span></li>
+                <li><span>Scrap Car Recycling</span></li>
               </ol>  
             </h1>
 
             <div className='flex flex-col gap-4 items-center justify-center'>
               <p className=' text-[18px] md:text-4xl font-semibold text-white'>
-                Hassle-Free Vehicle Scrapping – Free Pickup & Instant Valuation! Book Now.
+                Get the highest value for your scrap car with hassle-free pickup, instant payment, and eco-friendly recycling..
               </p>
               <hr className='w-full md:w-1/2 border-white' />
               <a 
                 className='cursor-pointer w-fit bg-[#F9345b] hover:bg-[#F9345b]/80 text-white text-[16px] md:text-[20px] font-bold py-4 px-8 rounded-lg '
                 href='/#contact'
               >
-                Contact Now
+                Get Free Car Valuation Now!
               </a>
             </div>
 
@@ -106,32 +106,32 @@ const Home = () => {
         <div className="hero-content text-center">
           <div className=" flex flex-col items-center mx-auto px-4 py-20 gap-12 md:gap-20">
 
-            <h1 className='font-bold text-4xl md:text-6xl text-[#009900]/90'>Why Recycle Your Vehicles</h1>
+            <h1 className='font-bold text-4xl md:text-6xl text-[#009900]/90'>Why Vehicle Recycling is Important | Benefits of Scrapping Your Old Car</h1>
 
             <div className='flex max-md:flex-col justify-center gap-12 md:gap-24 w-full'>
               <div className='flex flex-col items-center justify-center gap-2'>
                  <div className='h-[200px] w-[200px] border-4 rounded-full border-[#009900]/70 overflow-hidden'>
                     <img className='h-full w-full object-cover  ' src="/images/junkyard.avif" alt="" />
                  </div>
-                 <p className='font-semibold text-2xl text-[#009900]'>Minimize Environmental Impact</p>
+                 <p className='font-semibold text-2xl text-[#009900]'>Reduce Pollution & Environmental Damage</p>
               </div>
               <div className='flex flex-col items-center justify-center gap-2'>
                  <div className='h-[200px] w-[200px] border-4 rounded-full border-[#009900]/70 overflow-hidden'>
                     <img className='h-full w-full object-cover  ' src="/images/bulb.jpg" alt="" />
                  </div>
-                 <p className='font-semibold text-2xl text-[#009900]'>Conserve Energy Resources</p>
+                 <p className='font-semibold text-2xl text-[#009900]'>Save Energy & Reduce Carbon Footprint</p>
               </div>
               <div className='flex flex-col items-center justify-center gap-2'>
                  <div className='h-[200px] w-[200px] border-4 rounded-full border-[#009900]/70 overflow-hidden'>
                     <img className='h-full w-full object-cover  ' src="/images/metal.jpeg" alt="" />
                  </div>
-                 <p className='font-semibold text-2xl text-[#009900]'>Preserve Natural Resources</p>
+                 <p className='font-semibold text-2xl text-[#009900]'>Recycle Auto Parts & Preserve Resources</p>
               </div>
               <div className='flex flex-col items-center justify-center gap-2'>
                  <div className='h-[200px] w-[200px] border-4 rounded-full border-[#009900]/70 overflow-hidden'>
                     <img className='h-full w-full object-cover  ' src="/images/legal-2.jpg" alt="" />
                  </div>
-                 <p className='font-semibold  text-2xl text-[#009900]'>Ensure Regulatory Compliance</p>
+                 <p className='font-semibold  text-2xl text-[#009900]'>Follow Legal Vehicle Scrapping Guidelines</p>
               </div>
             </div>
 
@@ -150,7 +150,7 @@ const Home = () => {
         <div className="hero-content text-center">
           <div className=" flex flex-col items-center mx-auto px-4 py-16 gap-24">
 
-            <h1 className='text-white font-bold text-4xl md:text-6xl'>Why Choose Us</h1>
+            <h1 className='text-white font-bold text-4xl md:text-6xl'>Why Choose Us for Vehicle Scrapping?</h1>
 
             <div className='text-[18px] font-normal text-white flex flex-col gap-12'>
               <div className='flex justify-between gap-12 max-md:flex-col'>
@@ -164,7 +164,7 @@ const Home = () => {
                   </div>
                   <div className='md:max-w-[450px] flex flex-col items-center md:items-start gap-2 '>
                     <h1 className='font-semibold text-3xl'>Authorized Center</h1>
-                    <h1 className='text-center md:text-left text-[22px] md:text-[20px]'>Certified and trustworthy services for hassle-free vehicle scrapping.</h1>
+                    <h1 className='text-center md:text-left text-[22px] md:text-[20px]'>Certified & Govt-Approved Vehicle Scrapping Services.</h1>
                   </div>
                 </div>
                 <div className='flex gap-6 items-center max-md:flex-col justify-center'>
@@ -177,7 +177,7 @@ const Home = () => {
                   </div>
                   <div className='md:max-w-[450px] flex flex-col items-center md:items-start gap-2 '>
                     <h1 className='font-semibold text-3xl'>Free Pickup</h1>
-                    <h1 className='text-center md:text-left text-[22px] md:text-[20px]'>Convenient doorstep vehicle pickup at no additional cost.</h1>
+                    <h1 className='text-center md:text-left text-[22px] md:text-[20px]'>Free Doorstep Pickup at No Extra Cost!</h1>
                   </div>
                 </div>
               </div>
@@ -192,7 +192,7 @@ const Home = () => {
                   </div>
                   <div className='md:max-w-[450px] flex flex-col items-center md:items-start gap-2 '>
                     <h1 className='font-semibold text-3xl'>Fair Value</h1>
-                    <h1 className='text-center md:text-left text-[22px] md:text-[20px]'>Get the best price for your old or damaged vehicle.</h1>
+                    <h1 className='text-center md:text-left text-[22px] md:text-[20px]'>Get the Best Price for Your Scrap Car – Instant Payment!</h1>
                   </div>
                 </div>
                 <div className='flex gap-6 items-center max-md:flex-col justify-center'>
