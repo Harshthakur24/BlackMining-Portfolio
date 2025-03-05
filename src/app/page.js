@@ -153,8 +153,8 @@ const Home = () => {
             <h1 className='text-white font-bold text-4xl md:text-6xl'>Why Choose Us for Vehicle Scrapping?</h1>
 
             <div className='text-[18px] font-normal text-white flex flex-col gap-12'>
-              <div className='flex justify-between gap-12 max-md:flex-col'>
-                <div className='flex gap-6 items-center max-md:flex-col justify-center'>
+              <div className='flex justify-between gap-12 max-md:flex-col '>
+                <div className='flex gap-6 items-center max-md:flex-col justify-center w-full'>
                   <div className='h-[130px] w-[130px] border-4 border-white rounded-full overflow-hidden bg-black '>
                     <img 
                       src="/images/junkyard2.webp" 
@@ -162,12 +162,12 @@ const Home = () => {
                       className='w-full h-full object-cover' 
                     />
                   </div>
-                  <div className='md:max-w-[450px] flex flex-col items-center md:items-start gap-2 '>
+                  <div className='md:max-w-[450px] flex flex-col items-center md:items-start gap-2 w-full'>
                     <h1 className='font-semibold text-3xl'>Authorized Center</h1>
                     <h1 className='text-center md:text-left text-[22px] md:text-[20px]'>Certified & Govt-Approved Vehicle Scrapping Services.</h1>
                   </div>
                 </div>
-                <div className='flex gap-6 items-center max-md:flex-col justify-center'>
+                <div className='flex gap-6 items-center max-md:flex-col justify-center w-full'>
                   <div className='h-[130px] w-[130px] border-4 border-white rounded-full overflow-hidden'>
                     <img 
                         src="/images/pickup2.webp" 
@@ -175,14 +175,14 @@ const Home = () => {
                         className='w-full h-full object-cover' 
                       />
                   </div>
-                  <div className='md:max-w-[450px] flex flex-col items-center md:items-start gap-2 '>
+                  <div className='md:max-w-[450px] flex flex-col items-center md:items-start gap-2 w-full'>
                     <h1 className='font-semibold text-3xl'>Free Pickup</h1>
                     <h1 className='text-center md:text-left text-[22px] md:text-[20px]'>Free Doorstep Pickup at No Extra Cost!</h1>
                   </div>
                 </div>
               </div>
-              <div className='flex justify-between gap-12 max-md:flex-col'>
-                <div className='flex gap-6 items-center max-md:flex-col justify-center'>
+              <div className='flex justify-between gap-12 max-md:flex-col '>
+                <div className='flex gap-6 items-center max-md:flex-col justify-center w-full '>
                   <div className='h-[130px] w-[130px] border-4 border-white rounded-full overflow-hidden'>
                   <img 
                       src="/images/money.jpeg" 
@@ -190,12 +190,12 @@ const Home = () => {
                       className='w-full h-full object-cover' 
                     />
                   </div>
-                  <div className='md:max-w-[450px] flex flex-col items-center md:items-start gap-2 '>
+                  <div className='md:max-w-[450px] flex flex-col items-center md:items-start gap-2 w-full'>
                     <h1 className='font-semibold text-3xl'>Fair Value</h1>
                     <h1 className='text-center md:text-left text-[22px] md:text-[20px]'>Get the Best Price for Your Scrap Car – Instant Payment!</h1>
                   </div>
                 </div>
-                <div className='flex gap-6 items-center max-md:flex-col justify-center'>
+                <div className='flex gap-6 items-center max-md:flex-col justify-center w-full '>
                   <div className='h-[130px] w-[130px] border-4 border-white rounded-full overflow-hidden'>
                   <img 
                       src="/images/digital.webp" 
@@ -204,7 +204,7 @@ const Home = () => {
                     />
 
                   </div>
-                  <div className='md:max-w-[450px] flex flex-col items-center md:items-start gap-2 '>
+                  <div className='md:max-w-[450px] flex flex-col items-center md:items-start gap-2 w-full'>
                     <h1 className='font-semibold text-3xl'>Digital Process</h1>
                     <h1 className='text-center md:text-left text-[22px] md:text-[20px]'>Easy Online Process – Quick & Transparent Transactions!</h1>
                   </div>

@@ -4,7 +4,8 @@ import Footer from "@/components/footer";
 import Script from "next/script";
 
 export const metadata = {
-  title: "Black Mining Junkyard",
+  title: "Sell Your Scrap Car for the Best Price | Black Mining Junkyard LLP",
+  description: "Get the best price for your scrap car with Black Mining Junkyard LLP – India's trusted scrap car buyer. Hassle-free pickup, instant payment, and eco-friendly disposal. Call now for a free quote!",
 };
 
 export default function RootLayout({ children }) {

@@ -49,6 +49,11 @@ const faqs = [
   },
 ]
 
+export const metadata = {
+  title: "Black Mining Junkyard LLP | Vehicle Scrapping & Recycling Queries Answered",
+  description: "Find answers to common questions about vehicle scrapping, eco-friendly car recycling, legal compliance, scrap value, and government-approved disposal services. Learn more with Black Mining Junkyard LLP’s expert FAQs!",
+};
+
 const Faqs = () => {
   return (
     <main className=''>
