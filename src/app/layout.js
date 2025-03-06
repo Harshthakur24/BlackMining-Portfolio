@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Move Google Analytics scripts to Script components */}
+        <meta name="google-site-verification" content="qh3o8QhgckZ5DLphk1vI3f2ewjWQNsLwhI_PJwGjlWg" />
       </head>
       <body className="antialiased">
         {/* Google Analytics scripts with Next.js Script component */}
