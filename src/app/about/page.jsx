@@ -40,6 +40,12 @@ const testimonials = [
   },
 ];
 
+export const metadata = {
+  title: "About Black Mining Junkyard LLP - Certified Scrap Car Recycling & Vehicle Scrapping",
+  description: "Black Mining Junkyard LLP is a Govt-certified (MSTC Ltd) scrap car recycler, offering hassle-free vehicle scrapping with free pickup & instant payment. Learn more about our eco-friendly process.",
+};
+
+
 const About = () => {
 
   return (

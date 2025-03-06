@@ -1,5 +1,10 @@
 import React from 'react'
 
+export const metadata = {
+  title: "Vehicle Scrapping Services | Scrap Car Recycling | Black Mining Junkyard LLP",
+  description: "Black Mining Junkyard LLP offers hassle-free vehicle scrapping, government-certified car recycling, free pickup, instant payment, and legal deregistration. Get the best value for your old car today!",
+};
+
 const Services = () => {
   return (
     <div>

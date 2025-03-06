@@ -4,14 +4,15 @@ import Footer from "@/components/footer";
 import Script from "next/script";
 
 export const metadata = {
-  title: "Black Mining Junkyard",
+  title: "Sell Your Scrap Car for the Best Price | Black Mining Junkyard LLP",
+  description: "Get the best price for your scrap car with Black Mining Junkyard LLP – India's trusted scrap car buyer. Hassle-free pickup, instant payment, and eco-friendly disposal. Call now for a free quote!",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Move Google Analytics scripts to Script components */}
+        <meta name="google-site-verification" content="qh3o8QhgckZ5DLphk1vI3f2ewjWQNsLwhI_PJwGjlWg" />
       </head>
       <body className="antialiased">
         {/* Google Analytics scripts with Next.js Script component */}
