@@ -5,14 +5,18 @@ import Script from "next/script";
 
 export const metadata = {
   title: "Sell Your Scrap Car for the Best Price | Black Mining Junkyard LLP",
-  description: "Get the best price for your scrap car with Black Mining Junkyard LLP – India's trusted scrap car buyer. Hassle-free pickup, instant payment, and eco-friendly disposal. Call now for a free quote!",
+  description:
+    "Get the best price for your scrap car with Black Mining Junkyard LLP – India's trusted scrap car buyer. Hassle-free pickup, instant payment, and eco-friendly disposal. Call now for a free quote!",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta name="google-site-verification" content="qh3o8QhgckZ5DLphk1vI3f2ewjWQNsLwhI_PJwGjlWg" />
+        <meta
+          name="google-site-verification"
+          content="qh3o8QhgckZ5DLphk1vI3f2ewjWQNsLwhI_PJwGjlWg"
+        />
       </head>
       <body className="antialiased">
         {/* Google Analytics scripts with Next.js Script component */}
@@ -39,8 +43,21 @@ export default function RootLayout({ children }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
             gtag('config', 'AW-16912183761');
+          `}
+        </Script>
+
+        {/* Additional Google Tag */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-73FGTMW06D"
+          strategy="afterInteractive"
+        />
+        <Script id="google-tag-73FGTMW06D" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-73FGTMW06D');
           `}
         </Script>
 
